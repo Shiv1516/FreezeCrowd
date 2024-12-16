@@ -1,0 +1,95 @@
+#slider-wrapper {
+    width:100%;
+    margin:0 auto;
+    padding-top:0px;
+	border:0px solid #bfbfbf;
+	padding:7px;
+	box-shadow:0px 0px 3px #000;
+}
+#slider {
+	position:relative;
+    width:100%;
+	background:url(../images/loading.gif) no-repeat 50% 50%;
+	border:0px solid #000;
+	margin:0px;
+	color:#ff0000;
+	height:381px;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+	color:#ff0000;
+}
+#slider a {
+	border:0;
+	display:block;
+	color:#fff;
+	border:0px solid red;
+}
+.nivo-controlNav {
+	position:absolute;
+	right:5px;
+	border:0px solid red;
+	bottom:8px;
+	color:#fff;
+}
+.nivo-controlNav a {
+	display:block;
+	width:21px;
+	height:19px;
+	background:url(../images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	margin-right:3px;
+	float:left;
+	border:0px solid red;
+}
+.nivo-controlNav a.active {
+	background-position:0 -20px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background-image:url(../images/arrows.png);
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	border:0;
+	border:0px solid red;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+	border:0px solid red;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+	border:0px solid red;
+	opacity:1;
+	
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+	border:0px solid red;
+}
+.White_text
+	{
+	color:#fff;
+	font-weight:normal;
+	font-size:18px;
+	}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

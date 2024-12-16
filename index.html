@@ -1,0 +1,3588 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FreezeCrowd</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+  </head>
+  <body>
+    <div class="body-bg"></div>
+    <header class="header pr zi99">
+      <div class="wrapper v-center jcsb">
+        <div class="logo-search-box v-center">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/freezecrowd-logo-dark.png"
+                alt="FreezeCrowd Logo"
+              />
+            </a>
+          </div>
+          <form action="post" class="top-search v-center pr ml24">
+            <span class="material-symbols-outlined pa ml16 fc2 fs24">
+              search
+            </span>
+            <input
+              type="text"
+              placeholder="Search"
+              class="h40 br24 bg3 plr48 brd2 fs14"
+            />
+          </form>
+        </div>
+        <nav class="navbar pr">
+          <ul class="nav-items v-center">
+            <li class="nav-item pr aft active">
+              <a href="index.html" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  home
+                </span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="my-photos.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  photo_camera
+                </span>
+                Photo
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a href="friends.html" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  diversity_3
+                </span>
+                Friends
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="messages.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    Chat
+                  </span>
+                  <span class="item-count box-center blue">27</span>
+                </span>
+                Messages
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="notifications.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    notifications
+                  </span>
+                  <span class="item-count box-center red">8</span>
+                </span>
+                Notification
+              </a>
+              <ul class="notify-dd-list bg3 brd2 p16 pa dn">
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class>
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg2 fc3 fs14 box-center">
+                    RV
+                  </span>
+                  <span class>
+                    <b>Rishav Varti</b> shared new photo.
+                    <a href="#" class="fs12 fc2 fc8">see photo</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class>
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-settings pr">
+          <ul class="user-items v-center" onclick="userSettings()">
+            <li class="seprate-nav"></li>
+            <li class="nav-user v-center fc2 ml16 cp">
+              <div class="avatar box-center">
+                <img src="images/avatar-default.jpg" alt="Sandeep Pics" />
+              </div>
+              <div class="user-name fs14 fw5 ml8">Sandeep</div>
+              <span class="material-symbols-outlined fs18 ml4">
+                expand_more
+              </span>
+            </li>
+          </ul>
+          <div
+            id="userSettings"
+            class="userSettings pa t0 r0 p16 bg3 brd2 br2 dn"
+          >
+            <div class="user-info w100 h-center ais fww">
+              <div class="user-bg-box flx100 anim-bg"></div>
+              <div class="user-pics pr zi1">
+                <img src="images/avatar-default.jpg" alt="user pics" />
+              </div>
+              <div class="user-detail pr zi1 flx1 ml12">
+                <h2 class="user-name fs15 fw5 mt8">`</h2>
+                <p class="user-name fs12 fc8 mt4">sandeep@freezecrowd.in</p>
+              </div>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> person </span
+                >Personal Information
+              </p>
+              <div class="article-devide"></div>
+              <a href="user-settings.html" class="fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> tune </span>User
+                Settings
+              </a>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8">
+                  notifications </span
+                >Notification Setting
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> report </span
+                >Report
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2 pb24">
+                <span class="material-symbols-outlined mr8"> logout </span>Log
+                Out
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-board wrapper df ais mt24 fww">
+        <section class="user-info-block bg3 block-design">
+          <article class="user-info w100 plr16 h-center ais fww">
+            <div class="user-bg-box flx100 mt16 pr ofh">
+              <div class="snowfall-container"></div>
+            </div>
+            <div class="user-pics pr zi1">
+              <a href="add-profile.html">
+                <img src="images/avatar-default.jpg" alt="user pics" />
+              </a>
+            </div>
+            <div class="user-detail pr zi1 flx1 ml12">
+              <h2 class="user-name fs14 fw5 mt8">
+                <a href="add-profile.html"> Sandeep Beniwal </a>
+              </h2>
+              <p class="user-name fs10 fc8 mt4">sandeep@freezecrowd.in</p>
+            </div>
+            <div class="profile-status w100">
+              <h2 class="fc2 fs12">
+                Profile: <span class="fc7 fw6">60%</span>
+              </h2>
+
+              <div class="prfile-status-bar pr mt8 mb16">
+                <div class="bar-line blank-bar"></div>
+                <div
+                  class="bar-line fill-bar pa zi1 t0 l0"
+                  style="width: 60%"
+                ></div>
+              </div>
+              <div class="add-info-btn fs11 fc2 box-center mb16">
+                <a href="add-profile.html" class="pt8 pb8 brd2 plr16 br2">
+                  Add Information to your Profile
+                </a>
+              </div>
+            </div>
+            <div class="user-follow-info flx100 mt16 df jcsb plr8 pb16">
+              <div class="follower tac">
+                <p class="follow-count fs16 fw6">15K</p>
+                <p class="follow-title fs10 fc8 mt4">Followers</p>
+              </div>
+              <div class="following tac">
+                <p class="follow-count fs16 fw6">990</p>
+                <p class="follow-title fs10 fc8 mt4">Following</p>
+              </div>
+              <div class="requeting tac">
+                <p class="follow-count fs16 fw6">24</p>
+                <p class="follow-title fs10 fc8 mt4">Requests</p>
+              </div>
+            </div>
+
+            <div class="popup-question-devide"></div>
+            <article class="all-questions df fdc w100">
+              <article class="question-info w100">
+                <div class="question-skill-chips ptb8 transit2">
+                  <div
+                    class="question-chip fs12 plr4 cp fw6 fc8 v-center"
+                    id="AskQuestion"
+                  >
+                    <img src="images/ask-question.svg" alt="ask-question" />
+                    <h3 class="question-chip-heading ml4">
+                      Ask a Question <span class="fc6">(9)</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="q-n-a-model form-modal" id="askque">
+                  <div class="q-n-a-section">
+                    <div
+                      class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+                      id="closeModalx"
+                    >
+                      <span class="material-symbols-outlined fs24 fc2">
+                        close
+                      </span>
+                    </div>
+                    <div class="q-n-a-containers plr12 ptb8">
+                      <div class="form-heading pb12 v-center ttma cp">
+                        <div class="popup-icon-img p4 brd2 br50">
+                          <img
+                            src="images/avatar-03.jpg"
+                            alt="avatar-03"
+                            class="popup-q-a-icon"
+                          />
+                        </div>
+                        <h2 class="form-main-text fs16 fw6 tal fc7 ml12">
+                          Ask Sneha Pandey a Question !
+                        </h2>
+                      </div>
+                      <form class="q-n-q-item-detail df fdc jcsb fs12">
+                        <div class="form-frnd df ptb12 w100">
+                          <select
+                            class="select-question df bg4 plr8 br4 ptb12 mb12 flx1"
+                          >
+                            <option value="select option" class="ptb12">
+                              Select a friend
+                            </option>
+                            <option value="select option" class="ptb12">
+                              Tanvi Saxena
+                            </option>
+                            <option value="select option" class="ptb12">
+                              Suresh Bararia
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-questions df fdc">
+                          <select
+                            class="select-question df bg4 plr8 br4 ptb12 mb12"
+                          >
+                            <option value="select option" class="ptb12">
+                              Select Question
+                            </option>
+                            <option value="select option" class="ptb12">
+                              What's your go-to comfort food?
+                            </option>
+                            <option value="select option" class="ptb12">
+                              What motivates you every day?
+                            </option>
+                            <option value="select option" class="ptb12">
+                              What's your favorite travel destination?
+                            </option>
+                          </select>
+                        </div>
+                        <div class="form-frnd df fdc ptb12 w100">
+                          <textarea
+                            name="text"
+                            id
+                            rows="5"
+                            required="required"
+                            placeholder="OR Enter your own Question"
+                            class="text-box flx1 bg4 plr8 br4 pt12 fc8 mtb12"
+                          ></textarea>
+                        </div>
+                        <div class="form-buttons df jcc">
+                          <button
+                            class="form-reset bg4 h40 plr24 br4 ls1 fw5 cp mlr8"
+                            id="resetButton"
+                          >
+                            Reset
+                          </button>
+                          <button
+                            class="form-submit bg1 h40 plr24 br4 fc4 ls1 fw5 cp mlr8"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-question-devide1"></div>
+              </article>
+              <article class="question-info w100">
+                <div class="question-skill-chips ptb8 transit2">
+                  <div
+                    class="question-chip fs12 plr4 cp fw6 fc8 v-center"
+                    id="sendQuestionMessage"
+                  >
+                    <img
+                      src="images/question-answer.svg"
+                      alt="question-answer"
+                    />
+                    <h3 class="question-chip-heading ml4">
+                      Answer the Question
+                    </h3>
+                  </div>
+                </div>
+                <div class="ask-question-model form-modal" id="sendquesans">
+                  <div class="ask-question-section">
+                    <div
+                      class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+                      id="closeModal7"
+                    >
+                      <span class="material-symbols-outlined fs24 fc2">
+                        close
+                      </span>
+                    </div>
+                    <div class="ask-question-containers p12">
+                      <div class="form-heading pb12 ttma cp">
+                        <div class="popup-icon-img df">
+                          <img src="images/anwer-01.svg" alt="Answer" />
+                          <h2 class="form-main-text fs18 fw6 tal ml8">
+                            My Answer
+                          </h2>
+                        </div>
+                      </div>
+                      <div
+                        class="q-n-q-item-detail df jcsb cp ptb24 brd-b1 pb16"
+                      >
+                        <div class="q-n-a-container df">
+                          <div class="user-pics-sm pr zi1">
+                            <img src="images/avatar-04.jpg" alt="user pics" />
+                          </div>
+                          <div class="q-n-a-item-text ml12">
+                            <h4 class="q-n-a-heading fs14 lh20 fc1 tal fw6">
+                              Ramesh Jayshankar
+                            </h4>
+                            <div class="message v-center">
+                              <p
+                                class="q-n-a-subtext fs12 lh20 fc2 text-row lc2 tal"
+                              >
+                                What is your favorite book or movie, and why?
+                              </p>
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml24"
+                                >thumb_up</span
+                              >
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml8"
+                                >sentiment_satisfied</span
+                              >
+                            </div>
+                            <ul class="form-buttons df mt12 fw6 fs12 pr">
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-btn1"
+                              >
+                                Respond
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-later-btn1"
+                              >
+                                Respond Later
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="ignore-btn1"
+                              >
+                                Ignore
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="comment-btn"
+                              >
+                                Comment
+                              </li>
+                            </ul>
+                            <div class="responce-message1 df w100 fs12">
+                              <input
+                                type="text"
+                                placeholder="Enter you message"
+                                class="flx1 ptb12 bg4 plr8 br4 mtb12 w100"
+                              />
+                            </div>
+                            <div class="responce-later-message1 df w100 fs12">
+                              <div class="responce-later-messages df w100">
+                                <input
+                                  type="date"
+                                  class="flx1 ptb12 bg4 br-01 plr8 mtb12 w100"
+                                />
+                                <button
+                                  class="ptb12 bg1 plr12 fc4 br-02 fw6 mtb12"
+                                >
+                                  Update Date
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="response-input" style="display: none">
+                            <input
+                              type="text"
+                              placeholder="Enter your response"
+                            />
+                          </div>
+
+                          <div id="comment-textarea" style="display: none">
+                            <textarea placeholder="Leave a comment"></textarea>
+                          </div>
+                        </div>
+                        <p class="message-time fs14 fw6 fc8">2 feb.</p>
+                      </div>
+                      <div
+                        class="q-n-q-item-detail df jcsb cp ptb24 brd-b1 pb16"
+                      >
+                        <div class="q-n-a-container df">
+                          <div class="user-pics-sm pr zi1">
+                            <img src="images/avatar-02.jpg" alt="user pics" />
+                          </div>
+                          <div class="q-n-a-item-text ml12">
+                            <h4 class="q-n-a-heading fs14 lh20 fc1 tal fw6">
+                              Neha Dolkira
+                            </h4>
+                            <div class="message v-center">
+                              <p
+                                class="q-n-a-subtext fs12 lh20 fc2 text-row lc2 tal"
+                              >
+                                Can you share a valuable life lesson that you've
+                                learned recently?
+                              </p>
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml24"
+                                >thumb_up</span
+                              >
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml8"
+                                >sentiment_satisfied</span
+                              >
+                            </div>
+                            <ul class="form-buttons df mt12 fw6 fs12 pr">
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-btn"
+                              >
+                                Respond
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-later-btn"
+                              >
+                                Respond Later
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="ignore-btn"
+                              >
+                                Ignore
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="comment-btn"
+                              >
+                                Comment
+                              </li>
+                            </ul>
+                            <div class="responce-message df w100 fs12">
+                              <input
+                                type="text"
+                                placeholder="Enter you message"
+                                class="flx1 ptb12 bg4 plr8 br4 mtb12 w100"
+                              />
+                            </div>
+                            <div class="responce-later-message df w100 fs12">
+                              <div class="responce-later-messages df w100">
+                                <input
+                                  type="date"
+                                  class="flx1 ptb12 bg4 br-01 plr8 mtb12 w100"
+                                />
+                                <button
+                                  class="ptb12 bg1 plr12 fc4 br-02 fw6 mtb12"
+                                >
+                                  Update Date
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="response-input" style="display: none">
+                            <input
+                              type="text"
+                              placeholder="Enter your response"
+                            />
+                          </div>
+
+                          <div id="comment-textarea" style="display: none">
+                            <textarea placeholder="Leave a comment"></textarea>
+                          </div>
+                        </div>
+                        <p class="message-time fs14 fw6 fc8">21 Feb.</p>
+                      </div>
+                      <div class="q-n-q-item-detail df jcsb cp ptb24">
+                        <div class="q-n-a-container df">
+                          <div class="user-pics-sm pr zi1">
+                            <img src="images/avatar-03.jpg" alt="user pics" />
+                          </div>
+                          <div class="q-n-a-item-text ml12">
+                            <h4 class="q-n-a-heading fs14 lh20 fc1 tal fw6">
+                              Navika Kumari
+                            </h4>
+                            <div class="message v-center">
+                              <p
+                                class="q-n-a-subtext fs12 lh20 fc2 text-row lc2 tal"
+                              >
+                                Can you share a valuable life lesson that you've
+                                learned recently?
+                              </p>
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml24"
+                                >thumb_up</span
+                              >
+                              <span
+                                class="material-symbols-outlined smily-icon-popup transit2 fc8 fs24 cp ml8"
+                                >sentiment_satisfied</span
+                              >
+                            </div>
+                            <ul class="form-buttons df mt12 fw6 fs12 pr">
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-btn2"
+                              >
+                                Respond
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="respond-later-btn2"
+                              >
+                                Respond Later
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="ignore-btn2"
+                              >
+                                Ignore
+                              </li>
+                              <li
+                                class="form-chipp-icon transit2 plr12 ptb8 br24 fc2 cp mr8 box-center"
+                                id="comment-btn"
+                              >
+                                Comment
+                              </li>
+                            </ul>
+                            <div class="responce-message2 df w100 fs12">
+                              <input
+                                type="text"
+                                placeholder="Enter you message"
+                                class="flx1 ptb12 bg4 plr8 br4 mtb12 w100"
+                              />
+                            </div>
+                            <div class="responce-later-message2 df w100 fs12">
+                              <div class="responce-later-messages df w100">
+                                <input
+                                  type="date"
+                                  class="flx1 ptb12 bg4 br-01 plr8 mtb12 w100"
+                                />
+                                <button
+                                  class="ptb12 bg1 plr12 fc4 br-02 fw6 mtb12"
+                                >
+                                  Update Date
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="response-input" style="display: none">
+                            <input
+                              type="text"
+                              placeholder="Enter your response"
+                            />
+                          </div>
+
+                          <div id="comment-textarea" style="display: none">
+                            <textarea placeholder="Leave a comment"></textarea>
+                          </div>
+                        </div>
+                        <p class="message-time fs14 fw6 fc8">3 Mar.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-question-devide1"></div>
+              </article>
+              <article class="question-info w100">
+                <div class="question-skill-chips ptb8 transit2">
+                  <a
+                    href="my-favorites.html"
+                    class="question-chip fs12 plr4 cp fw6 fc8 v-center"
+                    id="myfavorites"
+                  >
+                    <img src="images/my-favorites.svg" alt="my-favorites" />
+                    <h3 class="question-chip-heading ml4">My Favorites</h3></a
+                  >
+                </div>
+                <div class="popup-question-devide1"></div>
+              </article>
+              <article class="question-info w100">
+                <div class="question-skill-chips ptb8 transit2">
+                  <a
+                    href="my-network.html"
+                    class="question-chip fs12 plr4 cp fw6 fc8 v-center"
+                    id="mynetwork"
+                  >
+                    <img src="images/my-network.svg" alt="my-network" />
+                    <h3 class="question-chip-heading ml4">My Network</h3>
+                  </a>
+                </div>
+                <div class="popup-question-devide1"></div>
+              </article>
+              <article class="skill-info w100">
+                <div class="title-grp v-center jcsb pr pt12 zi2">
+                  <div class="title-box v-center">
+                    <img src="images/intrust.svg" alt="intrust" />
+                    <h2 class="article-title fs12 ttu fc8 fw5 ml8">
+                      Interests
+                    </h2>
+                  </div>
+                  <div class="option-icon cp" data-popup="popup1"></div>
+                  <div
+                    class="intrust-popup fs12 pa fc8 p8 br4 fc1 bg4 cp zi3 mt12"
+                    id="popup1"
+                  >
+                    <ul class="popup1-item-list ptb4 plr4">
+                      <li class="add-int mb8 fw5 brd-b1 pb8">
+                        Add new Interests
+                      </li>
+
+                      <li class="delete-int mb8 fw5 brd-b1 pb8">
+                        Delete Interests
+                      </li>
+                      <li class="view-int fw5 brd-b1 pb8">View All</li>
+                    </ul>
+                    <!-- <p class="fw5 plr4"></p> -->
+                  </div>
+                </div>
+                <div class="skill-chips v-center fww pt16 mb12">
+                  <div class="skill-chip pr">
+                    Rich Dad Poor Dad
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                  </div>
+
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Book: Forth Wing
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Singing
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Cricket
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Reading
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Travel
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Designing
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Designing
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Designing
+                  </div>
+                  <div class="skill-chip pr">
+                    <span
+                      class="material-symbols-outlined fs10 bg2 fc4 br50 p4 pa cp intrust-close"
+                    >
+                      close
+                    </span>
+                    Designing
+                  </div>
+                  <div
+                    class="skill-chips fs10 ptb8 br24 plr12 bg4 brd2 cp fc1 ml4"
+                  >
+                    +4 More
+                  </div>
+                </div>
+                <div class="add-intrust-chips-box">
+                  <div class="add-intrust-chips v-center fww pt16 mb12">
+                    <div class="add-intrust-chip pr">
+                      Museums
+                      <span
+                        class="material-symbols-outlined fs10 bg1 fc4 br50 p4 pa cp intrust-add"
+                      >
+                        add
+                      </span>
+                    </div>
+                    <div class="add-intrust-chip pr">
+                      <span
+                        class="material-symbols-outlined fs10 bg1 fc4 br50 p4 pa cp intrust-add"
+                      >
+                        add
+                      </span>
+                      Car Brands
+                    </div>
+                    <div class="add-intrust-chip pr">
+                      <span
+                        class="material-symbols-outlined fs10 bg1 fc4 br50 p4 pa cp intrust-add"
+                      >
+                        add
+                      </span>
+                      Holidays
+                    </div>
+                    <div class="add-intrust-chip pr">
+                      <span
+                        class="material-symbols-outlined fs10 bg1 fc4 br50 p4 pa cp intrust-add"
+                      >
+                        add
+                      </span>
+                      Amusement Parks
+                    </div>
+                    <div class="add-intrust-chip pr">
+                      <span
+                        class="material-symbols-outlined fs10 bg1 fc4 br50 p4 pa cp intrust-add"
+                      >
+                        add
+                      </span>
+                      Reading
+                    </div>
+                  </div>
+                  <button class="intrust-add-btn bg1 br24 plr12 ptb8 fc3 fs12">
+                    Save
+                  </button>
+                </div>
+                <div class="article-devide"></div>
+              </article>
+              <article class="recent-infos w100">
+                <div class="title-grp">
+                  <div class="title-box v-center">
+                    <img src="images/notification.svg" alt="notification" />
+                    <h2 class="article-title fs12 ttu fc8 fw5 ml8">
+                      Recent Notification
+                    </h2>
+                  </div>
+                </div>
+                <div class="notification-list">
+                  <div class="visited-profile v-center jcsb mt16">
+                    <a href="visited-profile.html" class="box-title fs12 fc8">
+                      Visited Profile
+                    </a>
+                    <p class="box-text fs13 fw6 fc7">02</p>
+                  </div>
+                  <div class="keyword-game v-center jcsb mt24">
+                    <h3 class="box-title fs12 fc8">Keyword Game Request</h3>
+                    <p class="box-text fs13 fw6 fc7">02</p>
+                  </div>
+                  <div class="break-ice v-center jcsb mt24">
+                    <h3 class="box-title fs12 fc8">Break the Ice</h3>
+                    <p class="box-text fs13 fw6 fc7">05</p>
+                  </div>
+                  <div class="freeze-tag v-center jcsb mt24">
+                    <h3 class="box-title fs12 fc8">Freeze Tag request</h3>
+                    <p class="box-text fs13 fw6 fc7">22</p>
+                  </div>
+                  <div class="freeze-req v-center jcsb mt24">
+                    <h3 class="box-title fs12 fc8">Freeze Request</h3>
+                    <p class="box-text fs13 fw6 fc7">07</p>
+                  </div>
+                </div>
+                <div class="article-devide"></div>
+              </article>
+
+              <article class="disc-more pb24 h-center">
+                <h2
+                  class="box-center fs14 fw5 fc7 pt8 brd2 br4 ptb12 cp plr24 ttu bg4"
+                >
+                  Discover More
+                </h2>
+              </article>
+            </article>
+            <div class="popup-question-devide"></div>
+          </article>
+        </section>
+        <section class="user-post-block flx1 mlr24">
+          <article class="post-start w100 plr16 bg3 block-design ptb16">
+            <div class="post-by v-center jcsb mt12">
+              <div class="post-by-detail v-center cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-default.jpg" alt="user pics" />
+                </div>
+                <div class="suggest-text ml8">
+                  <h3 class="suggest-name fs12 ttu fw5 fc2">Sandeep Beniwal</h3>
+                </div>
+              </div>
+            </div>
+            <div class="post-detail mt16 v-center fww">
+              <form action="post" class="mind-input v-center pr mr8 flx1">
+                <input
+                  type="text"
+                  placeholder="Thoughts on your mind?"
+                  class="basic-post w100 h40 br24 bg3 pl16 pr48 brd2 fs12"
+                />
+                <button class="bg4 br24 plr16 ptb8 fc8 fs12 pa r0 mr4">
+                  Post
+                </button>
+              </form>
+              <div class="post-activity v-center">
+                <div
+                  class="post-activity-item bg-h1 box-center bg3 br brd2 br50 cp"
+                  onclick="openPhotoModal()"
+                >
+                  <span class="material-symbols-outlined social-icon fc8 fs18">
+                    imagesmode
+                  </span>
+                  <p class="post-hover dn wsnw">Photo</p>
+                </div>
+
+                <div
+                  class="post-activity-item box-center bg-h2 bg3 brd2 br50 cp"
+                  onclick="openYouTubeModal()"
+                >
+                  <span class="material-symbols-outlined social-icon fc8 fs18">
+                    youtube_activity
+                  </span>
+                  <p class="post-hover dn wsnw">YouTube URL</p>
+                </div>
+
+                <div
+                  class="post-activity-item box-center bg-xn bg3 brd2 br50 cp"
+                  onclick="openArticleModal()"
+                >
+                  <span class="material-symbols-outlined social-icon fc8 fs18">
+                    article
+                  </span>
+                  <p class="post-hover dn wsnw">Article</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            id="postedData"
+            class="post-pics w100 plr16 bg3 block-design ptb16 mt16"
+          >
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-default.jpg" alt="Pics3" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Aman Bhartia</h3>
+                  <p class="credit-from fs10 fc2 mt4" id="postNewAlbum"></p>
+                  <p class="credit-time fs10 fc8 mt4" id="postNewCat"></p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-pics df fs13 fc2 ptb12" id="postNewTitle"></div>
+            <div class="post-detail mt16">
+              <div class="post-pics df" id="postNewPics"></div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center cp">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      favorite
+                    </span>
+                  </div>
+                  <div class="action-icon box-center cp ml16">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      chat_bubble
+                    </span>
+                  </div>
+                  <div class="action-icon box-center cp ml16">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      send
+                    </span>
+                  </div>
+                </div>
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc8 fs24">
+                    bookmarks
+                  </span>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                </form>
+                <div class="comment-like">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="post-pics w100 plr16 bg3 block-design ptb16 mt16">
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail flx1 pr df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-02.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Susmita Sen</h3>
+                  <p class="credit-from fs10 fc2 mt4">
+                    California, Sightseeing
+                  </p>
+                  <p class="credit-time fs10 fc8 mt4">31m</p>
+                </div>
+                <div
+                  class="profile-view-thumb df aisc w100 bg7 pa plr16 ptb24 brd2 br4 zi2"
+                >
+                  <a
+                    href="friend-page.html"
+                    class="full-link bg-a1 box-center fc3 w100 l0 pa t0 b0 zi2"
+                  >
+                    Visit Profile
+                  </a>
+                  <div class="pvt-profile-box pr16 brd-r2">
+                    <div class="pvt-profile-user v-center">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-02.jpg" alt="user pics" />
+                      </div>
+                      <div class="pvt-profile-credits ml8">
+                        <h3 class="credit-name fs12 ttu fw5 fc2 mt4">
+                          Susmita Sen
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="user-follow-info w100 mt16 df jcsb plr8">
+                      <div class="follower tac">
+                        <p class="follow-count fs16 fw6">15K</p>
+                        <p class="follow-title fs10 fc8 mt4">Followers</p>
+                      </div>
+                      <div class="following tac">
+                        <p class="follow-count fs16 fw6">990</p>
+                        <p class="follow-title fs10 fc8 mt4">Following</p>
+                      </div>
+                      <div class="requeting tac">
+                        <p class="follow-count fs16 fw6">24</p>
+                        <p class="follow-title fs10 fc8 mt4">Requests</p>
+                      </div>
+                    </div>
+                    <div class="pvt-profile-cta pt8">
+                      <div
+                        class="message-btn w100 h40 plr24 box-center br4 cp bg1 fc3 mt8"
+                      >
+                        Message
+                      </div>
+                      <div
+                        class="follow-btn w100 h40 plr24 box-center br4 cp bg6 fc3 mt8"
+                      >
+                        Follow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pvt-posts-box mlr8 brd-l2 df">
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Lal Kila . Delhi</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics01.jpg" alt="Pics1" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          120
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >46
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Kullu . Manali</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics02.jpg" alt="Pics2" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          76
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >32
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16 pr">
+              <div class="post-pics cp pr" onclick="openPopup(event)">
+                <img src="images/pics10.jpg" alt="Pics1" />
+                <div
+                  class="user-pics-count pa t0 r0 mt16 mr16 fc4 bg6 br24 p8 fs12"
+                >
+                  1/3
+                </div>
+                <div class="user-pics-scroll pa b0 mb12 df">
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                </div>
+              </div>
+              <div class="home-freeze freeze-tag-block pa">
+                <div
+                  class="photo-modal-close box-center h24 w24 pa cp aft bef"
+                  onclick="freezeclose(event)"
+                ></div>
+                <h3 class="fs14 fw5 v-center">
+                  <img
+                    src="images/snowflake.svg"
+                    alt="freeze post"
+                    class="h24 mr8"
+                  />
+                  Freeze(11)
+                </h3>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                      <span class="material-symbols-outlined fc6 fs16">
+                        delete
+                      </span>
+                    </p>
+                    <div
+                      class="tag-frame ofh w48 h48"
+                      style="
+                        background-image: url(images/pics01.jpg);
+                        background-position: -625px -235px;
+                      "
+                    ></div>
+                    <div class="tag-title-box ml8">
+                      <div class="tag-title fs12 fw7 fc1">Sradha Singh</div>
+                      <div class="tag-rel fs10 fc2 mt4">Sister, 2 days ago</div>
+                      <h3 class="tag-by fs11 fw5 fc2 mt4">By Suresh bararia</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <div
+                      class="tag-frame ofh w48 h48"
+                      style="
+                        background-image: url(images/pics01.jpg);
+                        background-position: -535px -242px;
+                      "
+                    ></div>
+                    <div class="tag-title-box ml8">
+                      <div class="tag-title fs12 fw7 fc1">Raj's Camera</div>
+                      <div class="tag-rel fs10 fc2 mt4">
+                        Besties, 4 days ago
+                      </div>
+                      <h3 class="tag-by fs11 fw5 fc2">By Aman Mehra</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <div
+                      class="tag-frame ofh w48 h48"
+                      style="
+                        background-image: url(images/pics01.jpg);
+                        background-position: -410px -255px;
+                      "
+                    ></div>
+                    <div class="tag-title-box ml8">
+                      <div class="tag-title fs12 fw7 fc1">Sunset Time</div>
+                      <div class="tag-rel fs10 fc2 mt4">Nature, 8 days ago</div>
+                      <h3 class="tag-by fs11 fw5 fc2">By Sunita Chandeli</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-freeze comment-tag freeze-tag-block pa">
+                <div
+                  class="photo-modal-close box-center h24 w24 pa cp aft bef"
+                  onclick='openPopup("comment")'
+                ></div>
+                <h3 class="fs14 fw5 v-center">
+                  <span class="material-symbols-outlined fc10 fs24 mr8">
+                    chat_bubble
+                  </span>
+                  speech bubble(32)
+                </h3>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                      <span class="material-symbols-outlined fc6 fs16">
+                        favorite
+                      </span>
+                    </p>
+                    <div class="suggest-detail v-center cp">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-02.jpg" alt="user pics" />
+                      </div>
+                      <div class="suggest-text ml8">
+                        <h3 class="suggest-name fs11 ttu fw5 fc2 mt8">
+                          Tanvi Saxena
+                        </h3>
+                        <h3 class="tag-by fs13 fw3 fc2 mt4">
+                          Beautiful photo capture, it brings back nostalgic
+                          memories.
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                      <span class="material-symbols-outlined fc6 fs16">
+                        favorite
+                      </span>
+                    </p>
+                    <div class="suggest-detail v-center cp">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-04.jpg" alt="user pics" />
+                      </div>
+                      <div class="suggest-text ml8">
+                        <h3 class="suggest-name fs11 ttu fw5 fc1 mt8">
+                          Ramandeep Kaur
+                        </h3>
+                        <h3 class="tag-by fs13 fw3 fc2 mt4">
+                          nostalgic memories.
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                      <span class="material-symbols-outlined fc6 fs16">
+                        favorite
+                      </span>
+                    </p>
+                    <div class="suggest-detail v-center cp">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-03.jpg" alt="user pics" />
+                      </div>
+                      <div class="suggest-text ml8">
+                        <h3 class="suggest-name fs11 ttu fw5 fc1 mt8">
+                          Neha Shukla
+                        </h3>
+                        <h3 class="tag-by fs13 fw3 fc2 mt4">
+                          Such a lovely photo
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+                  <div class="tag-details v-center pr zi1 flx100">
+                    <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                      <span class="material-symbols-outlined fc6 fs16">
+                        favorite
+                      </span>
+                    </p>
+                    <div class="suggest-detail v-center cp">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-04.jpg" alt="user pics" />
+                      </div>
+                      <div class="suggest-text ml8">
+                        <h3 class="suggest-name fs11 ttu fw5 fc1 mt8">
+                          Naresh Singh
+                        </h3>
+                        <h3 class="tag-by fs13 fw3 fc2 mt4">
+                          Evokes fond memories of the past.
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center fdc cp">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      sentiment_satisfied
+                    </span>
+                    <p class="fs11 fc2 mt4">Smiley(10)</p>
+                  </div>
+
+                  <div
+                    class="action-icon box-center fdc cp ml16"
+                    onclick='openPopupQuick("freeze-tag-on","freeze")'
+                  >
+                    <img
+                      src="images/snowflake.svg"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">freeze(11)</p>
+                  </div>
+
+                  <div
+                    class="action-icon box-center fdc cp ml16"
+                    onclick='openPopupQuick("comment-tag-on1","comment")'
+                  >
+                    <span class="material-symbols-outlined fc10 fs24">
+                      chat_bubble
+                    </span>
+                    <p class="fs11 fc2 mt4">speech bubble(32)</p>
+                  </div>
+
+                  <div
+                    class="action-icon box-center fdc ml16 cp"
+                    onclick='openPopupQuick("freeze-req-on1","freeze-request")'
+                  >
+                    <img
+                      src="images/freeze-request-01.png"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">request(6)</p>
+                  </div>
+                </div>
+
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    bookmarks
+                  </span>
+                  <p class="fs11 fc2 mt4">save</p>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="post-pics post-video w100 plr16 bg3 block-design ptb16 mt16"
+          >
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail flx1 pr df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-02.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Susmita Sen</h3>
+                  <p class="credit-from fs10 fc2 mt4">
+                    California, Sightseeing
+                  </p>
+                  <p class="credit-time fs10 fc8 mt4">31m</p>
+                </div>
+                <div
+                  class="profile-view-thumb df aisc w100 bg7 pa plr16 ptb24 brd2 br4 zi2"
+                >
+                  <a
+                    href="friend-page.html"
+                    class="full-link bg-a1 box-center fc3 w100 l0 pa t0 b0 zi2"
+                  >
+                    Visit Profile
+                  </a>
+                  <div class="pvt-profile-box pr16 brd-r2">
+                    <div class="pvt-profile-user v-center">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-02.jpg" alt="user pics" />
+                      </div>
+                      <div class="pvt-profile-credits ml8">
+                        <h3 class="credit-name fs12 ttu fw5 fc2 mt4">
+                          Susmita Sen
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="user-follow-info w100 mt16 df jcsb plr8">
+                      <div class="follower tac">
+                        <p class="follow-count fs16 fw6">15K</p>
+                        <p class="follow-title fs10 fc8 mt4">Followers</p>
+                      </div>
+                      <div class="following tac">
+                        <p class="follow-count fs16 fw6">990</p>
+                        <p class="follow-title fs10 fc8 mt4">Following</p>
+                      </div>
+                      <div class="requeting tac">
+                        <p class="follow-count fs16 fw6">24</p>
+                        <p class="follow-title fs10 fc8 mt4">Requests</p>
+                      </div>
+                    </div>
+                    <div class="pvt-profile-cta pt8">
+                      <div
+                        class="message-btn w100 h40 plr24 box-center br4 cp bg1 fc3 mt8"
+                      >
+                        Message
+                      </div>
+                      <div
+                        class="follow-btn w100 h40 plr24 box-center br4 cp bg6 fc3 mt8"
+                      >
+                        Follow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pvt-posts-box mlr8 brd-l2 df">
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Lal Kila . Delhi</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics01.jpg" alt="Pics1" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          120
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >46
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Kullu . Manali</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics02.jpg" alt="Pics2" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          76
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >32
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16">
+              <div class="post-pics cp">
+                <iframe
+                  src="https://www.youtube.com/embed/dQx_pJyyyxc"
+                  id="video-preview"
+                  width="100%"
+                  height="300"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center fdc cp">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      sentiment_satisfied
+                    </span>
+                    <p class="fs11 fc2 mt4">Smiley(10)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <img
+                      src="images/snowflake.svg"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">freeze(11)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      chat_bubble
+                    </span>
+                    <p class="fs11 fc2 mt4">speech bubble(32)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc ml16 cp">
+                    <img
+                      src="images/freeze-request-01.png"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">request(6)</p>
+                  </div>
+                </div>
+
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    bookmarks
+                  </span>
+                  <p class="fs11 fc2 mt4">save</p>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="post-pics w100 plr16 bg3 block-design ptb16 mt16">
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail flx1 pr df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-02.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Susmita Sen</h3>
+                  <p class="credit-from fs10 fc2 mt4">
+                    California, Sightseeing
+                  </p>
+                  <p class="credit-time fs10 fc8 mt4">31m</p>
+                </div>
+                <div
+                  class="profile-view-thumb df aisc w100 bg7 pa plr16 ptb24 brd2 br4 zi2"
+                >
+                  <a
+                    href="friend-page.html"
+                    class="full-link bg-a1 box-center fc3 w100 l0 pa t0 b0 zi2"
+                  >
+                    Visit Profile
+                  </a>
+                  <div class="pvt-profile-box pr16 brd-r2">
+                    <div class="pvt-profile-user v-center">
+                      <div class="user-pics-sm pr zi1">
+                        <img src="images/avatar-02.jpg" alt="user pics" />
+                      </div>
+                      <div class="pvt-profile-credits ml8">
+                        <h3 class="credit-name fs12 ttu fw5 fc2 mt4">
+                          Susmita Sen
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="user-follow-info w100 mt16 df jcsb plr8">
+                      <div class="follower tac">
+                        <p class="follow-count fs16 fw6">15K</p>
+                        <p class="follow-title fs10 fc8 mt4">Followers</p>
+                      </div>
+                      <div class="following tac">
+                        <p class="follow-count fs16 fw6">990</p>
+                        <p class="follow-title fs10 fc8 mt4">Following</p>
+                      </div>
+                      <div class="requeting tac">
+                        <p class="follow-count fs16 fw6">24</p>
+                        <p class="follow-title fs10 fc8 mt4">Requests</p>
+                      </div>
+                    </div>
+                    <div class="pvt-profile-cta pt8">
+                      <div
+                        class="message-btn w100 h40 plr24 box-center br4 cp bg1 fc3 mt8"
+                      >
+                        Message
+                      </div>
+                      <div
+                        class="follow-btn w100 h40 plr24 box-center br4 cp bg6 fc3 mt8"
+                      >
+                        Follow
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pvt-posts-box mlr8 brd-l2 df">
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Lal Kila . Delhi</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics01.jpg" alt="Pics1" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          120
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >46
+                        </p>
+                      </div>
+                    </div>
+                    <div class="pvt-sm-post p8 br2 brd2 bg3">
+                      <div class="pvt-sm-post-top v-center jcsb h24">
+                        <p class="fc2 fs12">Kullu . Manali</p>
+                        <p class="fc2 fs12">12m</p>
+                      </div>
+                      <div class="pvt-sm-post-mid df flx1">
+                        <img src="images/pics02.jpg" alt="Pics2" />
+                      </div>
+                      <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            favorite
+                          </span>
+                          76
+                        </p>
+                        <p class="v-center">
+                          <span class="material-symbols-outlined fc8 fs18 mr4">
+                            chat_bubble </span
+                          >32
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16">
+              <div class="post-pics cp pr" onclick="openPopup(event)">
+                <img src="images/pics01.jpg" alt="Pics1" />
+                <div
+                  class="user-pics-count pa t0 r0 mt16 mr16 fc4 bg6 br24 p8 fs12"
+                >
+                  1/3
+                </div>
+                <div class="user-pics-scroll pa b0 mb12 df">
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                </div>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center fdc cp">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      sentiment_satisfied
+                    </span>
+                    <p class="fs11 fc2 mt4">Smiley(10)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <img
+                      src="images/snowflake.svg"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">freeze(11)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      chat_bubble
+                    </span>
+                    <p class="fs11 fc2 mt4">speech bubble(32)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc ml16 cp">
+                    <img
+                      src="images/freeze-request-01.png"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">request(6)</p>
+                  </div>
+                </div>
+
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    bookmarks
+                  </span>
+                  <p class="fs11 fc2 mt4">save</p>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="post-pics post-thought-box w100 plr16 bg3 block-design ptb16 mt16"
+          >
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-03.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Anita Kumari</h3>
+                  <p class="credit-from fs10 fc2 mt4">NewYork, Tour</p>
+                  <p class="credit-time fs10 fc8 mt4">48m</p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16">
+              <div class="post-thought h-center fdc">
+                <p class="post-thought-p pr">
+                  <span class="quote-sign pa l0 t0">&ldquo;</span>
+                  The individual who says it is not possible should move out of
+                  the way of those doing it.
+                </p>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center fdc cp">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      sentiment_satisfied
+                    </span>
+                    <p class="fs11 fc2 mt4">Smiley(10)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <img
+                      src="images/snowflake.svg"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">freeze(11)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      chat_bubble
+                    </span>
+                    <p class="fs11 fc2 mt4">speech bubble(32)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc ml16 cp">
+                    <img
+                      src="images/freeze-request-01.png"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">request(6)</p>
+                  </div>
+                </div>
+
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    bookmarks
+                  </span>
+                  <p class="fs11 fc2 mt4">save</p>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="post-pics post-article-box w100 plr16 bg3 block-design ptb16 mt16"
+          >
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-03.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Anita Kumari</h3>
+                  <p class="credit-from fs10 fc2 mt4">NewYork, Tour</p>
+                  <p class="credit-time fs10 fc8 mt4">48m</p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16">
+              <div class="post-article">
+                <p class="post-article-p">
+                  If you wish to understand emotional intelligence, then social
+                  awareness is a major part of this broad concept. While the
+                  term gives itself away, there are a lot more details that need
+                  to be considered when talking about social awareness.
+                  Typically, the first thing that comes to a person's mind when
+                  they read the word "social" is people. These people can be of
+                  different races, cultures, genders and ethnicities. When we
+                  talk about social awareness, it mostly relates to
+                  understanding the emotions and actions of other people and
+                  learning how to behave in such situations.
+                </p>
+                <div class="see-mr-box df jce mt4">
+                  <span
+                    class="see-mr fc2 v-center cp"
+                    onclick="loadMoreArticle(event)"
+                    >see full article
+                    <span class="material-symbols-outlined ml4 fs18">
+                      expand_more
+                    </span></span
+                  >
+                </div>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center fdc cp">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      sentiment_satisfied
+                    </span>
+                    <p class="fs11 fc2 mt4">Smiley(10)</p>
+                  </div>
+                  <div class="action-icon box-center fdc cp ml16">
+                    <img
+                      src="images/snowflake.svg"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">freeze(11)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc cp ml16">
+                    <span class="material-symbols-outlined fc10 fs24">
+                      chat_bubble
+                    </span>
+                    <p class="fs11 fc2 mt4">speech bubble(32)</p>
+                  </div>
+
+                  <div class="action-icon box-center fdc ml16 cp">
+                    <img
+                      src="images/freeze-request-01.png"
+                      alt="freeze post"
+                      class="h24"
+                    />
+                    <p class="fs11 fc2 mt4">request(6)</p>
+                  </div>
+                </div>
+
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    bookmarks
+                  </span>
+                  <p class="fs11 fc2 mt4">save</p>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="post-pics w100 plr16 bg3 block-design ptb16 mt16">
+            <div class="post-by df ais jcsb mt12">
+              <div class="post-by-detail df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-04.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Aman Bhartia</h3>
+                  <p class="credit-from fs10 fc2 mt4">NewYork, Tour</p>
+                  <p class="credit-time fs10 fc8 mt4">48m</p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="post-detail mt16">
+              <div class="post-pics pr">
+                <img src="images/pics03.jpg" alt="Pics3" />
+                <div
+                  class="user-pics-count pa t0 r0 mt16 mr16 fc4 bg6 br24 p8 fs12"
+                >
+                  1/3
+                </div>
+                <div class="user-pics-scroll pa b0 mb12 df">
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                  <img src="images/breakice/dots.svg" alt="dots" />
+                </div>
+              </div>
+              <div class="post-action v-center jcsb mt8">
+                <div class="action-icons v-center">
+                  <div class="action-icon box-center cp">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      favorite
+                    </span>
+                  </div>
+                  <div class="action-icon box-center cp ml16">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      chat_bubble
+                    </span>
+                  </div>
+                  <div class="action-icon box-center cp ml16">
+                    <span class="material-symbols-outlined fc8 fs24">
+                      send
+                    </span>
+                  </div>
+                </div>
+                <div class="post-tag-icon">
+                  <span class="material-symbols-outlined fc8 fs24">
+                    bookmarks
+                  </span>
+                </div>
+              </div>
+              <div class="add-comment mt16 v-center jcsb">
+                <form action="post" class="comment-input v-center pr mr8 flx1">
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    class="w100 h40 bg3 brd-b1 fs12"
+                  />
+                  <span class="material-symbols-outlined pa r0 fc8">
+                    send
+                  </span>
+                </form>
+                <div class="comment-like ml8">
+                  <span class="material-symbols-outlined fc8 fs18">
+                    sentiment_satisfied
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="user-related-block bg3 block-design ptb16">
+          <article class="recent-info w100 plr16">
+            <div class="title-grp v-center jcsb pr">
+              <h2 class="article-title fs12 ttu fc8 fw5">
+                Frosty Friend Suggestions
+              </h2>
+              <div class="option-icon cp" data-popup="popup2"></div>
+              <div
+                class="intrust-popup fs12 pa p8 br4 fc1 bg4 cp zi3"
+                id="popup2"
+              >
+                <ul class="popup2-item-list">
+                  <li class="popup2-item mb8 fw5">Add friend</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sugget-items">
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">
+                      Suresh bararia
+                    </h3>
+                    <p class="suggest-skill fs10 fc8">
+                      Singing, Cricket, Design
+                    </p>
+                  </div>
+                </div>
+                <div class="suggest-add" onclick="toggleText(this)">
+                  <p class="cp fc7 fs10 ttu fw6 addButton">Add</p>
+                </div>
+              </div>
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-02.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Tanvi Saxena</h3>
+                    <p class="suggest-skill fs10 fc8">
+                      Drawing, Tenish, Reading
+                    </p>
+                  </div>
+                </div>
+                <div class="suggest-add" onclick="toggleText(this)">
+                  <p class="cp fc7 fs10 ttu fw6 addButton">Add</p>
+                </div>
+              </div>
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-default.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Manoj Singh</h3>
+                    <p class="suggest-skill fs10 fc8">Dance, Tenish, Reading</p>
+                  </div>
+                </div>
+                <div class="suggest-add" onclick="toggleText(this)">
+                  <p class="cp fc7 fs10 ttu fw6 addButton">Add</p>
+                </div>
+              </div>
+
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Sneha Pandey</h3>
+                    <p class="suggest-skill fs10 fc8">Music, Dance, Singing</p>
+                  </div>
+                </div>
+                <div class="suggest-add" onclick="toggleText(this)">
+                  <p class="cp fc7 fs10 ttu fw6 addButton">Add</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="recent-info w100 plr16">
+            <div class="title-grp">
+              <h2 class="article-title fs12 ttu fc8 fw5">Ice Tray</h2>
+            </div>
+
+            <div class="freeze-friends-items">
+              <div class="freeze-friends-item df fww jcsb mt12">
+                <div
+                  class="freeze-friends-detail flx48 tac mb12 pr ofh v-center fdc cp bg3 brd2 p8"
+                  id="freezefrientdetail01"
+                  onclick="displayModal(event)"
+                >
+                  <div
+                    class="break-ice-button pa t0 b0 l0 r0 zi2 ttu tac box-center fs15 fw6 fc7 plr16 lh22"
+                  >
+                    Break<br />The Ice
+                  </div>
+                  <div class="snowfall-container"></div>
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+
+                    <div class="icecreate1 pa b0 w100">
+                      <img
+                        src="images/ice/ice-box-01.png"
+                        alt="ice frame"
+                        class="w100"
+                      />
+                    </div>
+                  </div>
+                  <div class="freexe-tray tray-shape-01">
+                    <img
+                      src="images/ice/ice-tray-02.png"
+                      alt="tray 01"
+                      class="w56"
+                    />
+                  </div>
+                  <div class="freeze-friends-text">
+                    <h3 class="freeze-friends-name fs11 ttu fw5 fc2">
+                      Tanvi Saxena
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="freeze-friends-detail flx48 tac mb12 pr ofh v-center fdc cp bg3 brd2 p8"
+                  onclick="displayModal(event)"
+                >
+                  <div
+                    class="break-ice-button pa t0 b0 l0 r0 zi2 ttu tac box-center fs15 fw6 fc7 plr16 lh22"
+                  >
+                    Break<br />The Ice
+                  </div>
+                  <div class="snowfall-container"></div>
+                  <div class="user-pics-sm pr zi1 bounce-effect">
+                    <img src="images/avatar-02.jpg" alt="user pics" />
+                    <div class="icecreate1 pa t0 w100">
+                      <img
+                        src="images/ice/ice-box-04.png"
+                        alt="ice frame"
+                        class="w100"
+                      />
+                    </div>
+                  </div>
+                  <div class="freexe-tray tray-shape-01">
+                    <img
+                      src="images/ice/ice-tray-01.png"
+                      alt="tray 01"
+                      class="w56"
+                    />
+                  </div>
+                  <div class="freeze-friends-text ml8">
+                    <h3 class="freeze-friends-name fs11 ttu fw5 fc2">
+                      Monisha Singh
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="freeze-friends-detail flx48 tac mb12 pr ofh v-center fdc cp bg3 brd2 p8"
+                  onclick="displayModal(event)"
+                >
+                  <div
+                    class="break-ice-button pa t0 b0 l0 r0 zi2 ttu tac box-center fs15 fw6 fc7 plr16 lh22"
+                  >
+                    Break<br />The Ice
+                  </div>
+                  <div class="snowfall-container"></div>
+                  <div class="user-pics-sm pr zi1 bounce-effect">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                    <div class="icecreate1 pa b0 w100">
+                      <img
+                        src="images/ice/ice-box-03.png"
+                        alt="ice frame"
+                        class="w100"
+                      />
+                    </div>
+                  </div>
+                  <div class="freexe-tray tray-shape-01">
+                    <img
+                      src="images/ice/ice-tray-01.png"
+                      alt="tray 01"
+                      class="w56"
+                    />
+                  </div>
+                  <div class="freeze-friends-text ml8">
+                    <h3 class="freeze-friends-name fs11 ttu fw5 fc2">
+                      Sneha Pandey
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="freeze-friends-detail flx48 tac mb12 pr ofh v-center fdc cp bg3 brd2 p8"
+                  onclick="displayModal(event)"
+                >
+                  <div
+                    class="break-ice-button pa t0 b0 l0 r0 zi2 ttu tac box-center fs15 fw6 fc7 plr16 lh22"
+                  >
+                    Break<br />The Ice
+                  </div>
+                  <div class="snowfall-container"></div>
+                  <div class="user-pics-sm pr zi1 bounce-effect">
+                    <img src="images/profile-login.png" alt="user pics" />
+                    <div class="icecreate1 pa b0 w100">
+                      <img
+                        src="images/ice/ice-box-02.png"
+                        alt="ice frame"
+                        class="w100"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="freexe-tray tray-shape-01">
+                    <img
+                      src="images/ice/ice-tray-02.png"
+                      alt="tray 01"
+                      class="w56"
+                    />
+                  </div>
+                  <div class="freeze-friends-text ml8">
+                    <h3 class="freeze-friends-name fs11 ttu fw5 fc2">
+                      Suresh bararia
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="photo-info w100 plr16">
+            <div class="title-grp v-center jcsb pr">
+              <h2 class="article-title fs12 ttu fc8 fw5">Photo</h2>
+              <div class="option-icon cp" data-popup="popup3"></div>
+              <div
+                class="intrust-popup fs12 pa p8 br4 fc1 bg4 cp zi3"
+                id="popup3"
+              >
+                <ul class="popup3-item-list">
+                  <li class="popup3-item mb8 fw5">Upload Photos</li>
+                </ul>
+              </div>
+            </div>
+            <div class="photo-box df ais fww mt16">
+              <div class="photo">
+                <img src="images/pics01.jpg" alt="pics 01" />
+              </div>
+              <div class="photo">
+                <img src="images/pics02.jpg" alt="pics 02" />
+              </div>
+              <div class="photo">
+                <img src="images/pics03.jpg" alt="pics 03" />
+              </div>
+              <div class="photo">
+                <img src="images/pics04.jpg" alt="pics 04" />
+              </div>
+
+              <div class="photo">
+                <img src="images/pics05.jpg" alt="pics 05" />
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div class="photo-upload-modal photos-modal" id="photo-upload-modal">
+      <div class="photo-upload-section">
+        <div
+          class="photo-modal-close pa t0 r0 cp h24 w24 box-center"
+          onclick="closePhotoModal()"
+        >
+          <span class="material-symbols-outlined fs24 fc2"> close </span>
+        </div>
+        <div class="photo-upload-heading mt8">
+          <h2 class="photo-upload-title follow-count fs16 fw6">Photo Upload</h2>
+          <p class="fs12 mt8">Photo should be in jpg, png, gif formats</p>
+        </div>
+        <div class="photo-n-preview-box df fww">
+          <form class="photo-upload-box" id="photoUpForm">
+            <div
+              class="photo-upload-area v-center fdc"
+              id="photoUploadContainer"
+            >
+              <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/*"
+                multiple
+                style="display: none"
+              />
+              <div class="box-center fdc w100" id="photoDropZone">
+                <div class="photo-upload-icon mb8 mt16">
+                  <svg height="24" viewBox="0 0 24 24">
+                    <g clip-rule="evenodd" fill-rule="evenodd">
+                      <path d="m15 5v6.5h1v-6.5z" />
+                      <path
+                        d="m15.1465 4.14644-3 3 .7071.70711 2.6464-2.64645 2.6465 2.64645.7071-.70711-3-3c-.1953-.19526-.5119-.19526-.7071 0z"
+                      />
+                      <path
+                        d="m4 2.5c-.82843 0-1.5.67157-1.5 1.5v16c0 .8284.67157 1.5 1.5 1.5h16c.8284 0 1.5-.6716 1.5-1.5v-4.5h1v4.5c0 1.3807-1.1193 2.5-2.5 2.5h-16c-1.38071 0-2.5-1.1193-2.5-2.5v-16c0-1.38071 1.11929-2.5 2.5-2.5h4.5v1z"
+                      />
+                      <path
+                        d="m8.0789 16.121c-.57896-.7126-1.65648-.7425-2.27408-.0632l-3.435 3.7785-.73994-.6726 3.435-3.7785c1.02933-1.1323 2.82519-1.0825 3.79013.1052l5.03289 6.1943-.7761.6306z"
+                      />
+                      <path
+                        d="m17.4696 18.6766c-.5584-.5584-1.4541-.5882-2.0484-.0682l-2.5918 2.2679-.6585-.7526 2.5918-2.2678c.9905-.8668 2.4833-.8171 3.414.1136l3.177 3.1769-.7071.7072z"
+                      />
+                      <path
+                        d="m15.5 2.5c-3.3137 0-6 2.68629-6 6 0 3.3137 2.6863 6 6 6s6-2.6863 6-6c0-3.31371-2.6863-6-6-6zm-7 6c0-3.86599 3.134-7 7-7s7 3.13401 7 7c0 3.866-3.134 7-7 7s-7-3.134-7-7z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+
+                <p class="fs15 v-center">
+                  <span class="fw6 mr4">Drag & Drop</span> your photo here
+                </p>
+                <p class="max-notes fs12 fc8 mt4">
+                  (max 10 photo can be uploaded**)
+                </p>
+                <p class="mtb8">or</p>
+              </div>
+
+              <button
+                type="button"
+                id="uploadBtn"
+                class="upload-btn plr24 br4 box-center bg5 cp fc4 fs14 ttu h48"
+              >
+                Upload Photo
+              </button>
+            </div>
+            <div class="photo-upload-credits df jcsb fww">
+              <div class="custom-select mt24">
+                <input type="hidden" name="selected-option-1" />
+                <div class="selected">
+                  Select Album
+                  <span class="material-symbols-outlined pa r0 mr8 fc2">
+                    expand_more
+                  </span>
+                </div>
+                <ul class="options">
+                  <li>Album 1</li>
+                  <li>Album 2</li>
+                  <li>Album 3</li>
+                </ul>
+              </div>
+              <div class="custom-select mt24">
+                <input type="hidden" name="selected-option-2" />
+                <div class="selected">
+                  General Roles All Categories
+                  <span class="material-symbols-outlined pa r0 mr8 fc2">
+                    expand_more
+                  </span>
+                </div>
+                <ul class="options">
+                  <li>Category A</li>
+                  <li>Category B</li>
+                  <li>Category C</li>
+                </ul>
+              </div>
+              <div class="input-grp mt24 flx100">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Photo Title"
+                  class="image-photo-title h40 w100 plr16 fs13 db v-center"
+                />
+              </div>
+              <!-- Add more custom select instances as needed -->
+              <div class="url-btn-grp mt24 v-center flx100">
+                <button
+                  type="reset"
+                  class="restePhotoFile cp h48 plr24 br4 bg6 box-center ttu fc4 fs14"
+                >
+                  Reset
+                </button>
+                <button
+                  type="button"
+                  id="previewBtn"
+                  class="cp h48 ml24 plr24 br4 bg1 box-center ttu fc4 fs14"
+                >
+                  Preview
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="photo-preview-area v-center fdc assc flx1">
+            <div class="post-by df ais jcsb mt12 ml24" id="creditImagePreview">
+              <div class="post-by-detail flx1 pr df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-02.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">User Name</h3>
+                  <p class="credit-from v-center fs10 fc2 mt4">
+                    <span id="idAlbum">select album</span>,
+                    <span class="ml4" id="idCategory">select category</span>
+                  </p>
+                  <p class="credit-time fs10 fc8 mt4">0 minute ago</p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="mt16 mb16 fs13 w100 plr16" id="idTitle">
+              Title Goes Here...
+            </div>
+            <div class="prevw-all-content w100 pr">
+              <div
+                class="file-counter-ui box-center pa t0 r0 zi99 plr16 h40"
+                id="imageCounterContainer"
+              >
+                <span id="imageCounter"></span>
+              </div>
+              <div class="default-preview w100" id="imagePreview">
+                <p class="npv-text box-center">No Photo available...</p>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            id="postBtn"
+            disabled
+            class="cp h48 plr24 br4 bg1 box-center ttu fc4 fs14 pa b0 r0 mb16 mr16"
+            onclick="closePhotoModal()"
+          >
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="photo-upload-modal video-modal" id="video-upload-modal">
+      <div class="photo-upload-section">
+        <div
+          class="photo-modal-close pa t0 r0 cp h24 w24 box-center"
+          onclick="closeYouTubeModal()"
+        >
+          <span class="material-symbols-outlined fs24 fc2"> close </span>
+        </div>
+        <div class="photo-upload-heading mt24">
+          <h2 class="photo-upload-title follow-count fs16 fw6">
+            Post Youtube Video
+          </h2>
+        </div>
+        <div class="video-url-upload-area df">
+          <form class="video-url-form flx1" id="uploadVideo">
+            <div class="video-input-box df fdc">
+              <label for="youtubeurl">YouTube URL</label>
+              <input
+                type="type"
+                name="youtubeurl"
+                id="youtubeurl"
+                placeholder="Paste YouTube URL"
+                required
+              />
+              <span
+                id="errorvideoUrl"
+                class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+              ></span>
+            </div>
+            <div class="video-input-box df fdc">
+              <label for="messagevideo">Message for Video</label>
+              <input
+                type="type"
+                name="messagevideo"
+                id="messagevideo"
+                placeholder="Enter your message for the video"
+                required
+              />
+              <span
+                id="errorMessageVideo"
+                class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+              ></span>
+            </div>
+            <div class="url-btn-grp mt24 v-center">
+              <button
+                type="button"
+                onclick="resetForm()"
+                class="cp h48 plr24 br4 bg6 box-center ttu fc4 fs14"
+              >
+                Reset
+              </button>
+              <button
+                type="button"
+                onclick="previewVideo()"
+                class="cp h48 ml24 plr24 br4 bg5 box-center ttu fc4 fs14"
+              >
+                Preview
+              </button>
+            </div>
+          </form>
+          <div class="preview-box-vid">
+            <div class="post-by df ais jcsb mt12 ml24">
+              <div class="post-by-detail flx1 pr df ais cp">
+                <div class="user-pics-sm pr zi1">
+                  <img src="images/avatar-02.jpg" alt="user pics" />
+                </div>
+                <div class="post-credits ml8">
+                  <h3 class="credit-name fs12 ttu fw5 fc2 mt4">User Name</h3>
+
+                  <p class="credit-time fs10 fc8 mt4">0 minute ago</p>
+                </div>
+              </div>
+              <div class="option-icon mt8"></div>
+            </div>
+            <div class="preview-comment ml24 mt24" id="vid-prvw-comment">
+              <p class="preview-comment-p fs13"></p>
+              <div class="dummy-comment"></div>
+            </div>
+            <div class="url-prview-area box-center">
+              <iframe
+                id="video-preview"
+                width="100%"
+                height="100%"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="post-action v-center jcsb mt8 ml24">
+              <div class="action-icons v-center">
+                <div class="action-icon box-center fdc">
+                  <img
+                    src="images/snowflake.svg"
+                    alt="freeze post"
+                    class="h24"
+                  />
+                  <p class="fs11 fc2 mt4">freeze(0)</p>
+                </div>
+
+                <div class="action-icon box-center fdc ml16">
+                  <span class="material-symbols-outlined fc10 fs24">
+                    chat_bubble
+                  </span>
+                  <p class="fs11 fc2 mt4">comments(0)</p>
+                </div>
+
+                <div class="action-icon box-center fdc ml16">
+                  <img
+                    src="images/freeze-request-01.png"
+                    alt="freeze post"
+                    class="h24"
+                  />
+                  <p class="fs11 fc2 mt4">request(0)</p>
+                </div>
+              </div>
+
+              <div class="post-tag-icon">
+                <span class="material-symbols-outlined fc10 fs24">
+                  bookmarks
+                </span>
+                <p class="fs11 fc2 mt4">save</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="cp h48 ml24 plr24 br4 box-center ttu fc2 fs14 pa b0 r0 mr16 mb16"
+        >
+          Post
+        </button>
+      </div>
+    </div>
+    <div class="photo-upload-modal article-modal" id="article-upload-modal">
+      <div class="photo-upload-section">
+        <div
+          class="photo-modal-close pa t0 r0 cp h24 w24 box-center"
+          onclick="closeArticleModal()"
+        >
+          <span class="material-symbols-outlined fs24 fc2"> close </span>
+        </div>
+        <div class="photo-upload-heading mt24">
+          <h2 class="photo-upload-title follow-count fs16 fw6">
+            Article Upload
+          </h2>
+        </div>
+
+        <div class="photo-upload-files mt24">
+          <div class="article-uploading-card v-center jcsb ptb8 br4 mt8">
+            <textarea
+              name="articleText
+            "
+              id="articleText"
+              cols="30"
+              rows="20"
+            >
+Write Your Article...| </textarea
+            >
+          </div>
+        </div>
+        <button
+          type="button"
+          class="cp h48 ml24 plr24 br4 box-center ttu fc1 fs14 pa b0 r0 mr16 mb16 brd2"
+        >
+          Post
+        </button>
+      </div>
+    </div>
+
+    <div id="modaopen1" class="photo-deatil-modal pr jcc dn">
+      <div class="photo-modal wrapper bg3 br8 df jcsb pr">
+        <div
+          class="photo-modal-close r0 t0 box-center h48 w48 pa cp aft bef"
+          onclick="closePopup1()"
+        ></div>
+        <article class="modal-pics plr16 bg3 block-design ptb16 mt16 transit4">
+          <div class="post-by df ais jcsb mt12">
+            <div class="post-by-detail flx1 pr df ais cp">
+              <div class="user-pics-sm pr zi1">
+                <img src="images/avatar-02.jpg" alt="user pics" />
+              </div>
+              <div class="post-credits ml8">
+                <h3 class="credit-name fs12 ttu fw5 fc2 mt4">Susmita Sen</h3>
+                <p class="credit-from fs10 fc2 mt4">California, Sightseeing</p>
+                <p class="credit-time fs10 fc8 mt4">31m</p>
+              </div>
+              <div
+                class="profile-view-thumb df aisc w100 bg7 pa plr16 ptb24 brd2 br4 zi2"
+              >
+                <a
+                  href="friend-page.html"
+                  class="full-link bg-a1 box-center fc3 w100 l0 pa t0 b0 zi2"
+                >
+                  Visit Profile
+                </a>
+                <div class="pvt-profile-box pr16 brd-r2">
+                  <div class="pvt-profile-user v-center">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-02.jpg" alt="user pics" />
+                    </div>
+                    <div class="pvt-profile-credits ml8">
+                      <h3 class="credit-name fs12 ttu fw5 fc2 mt4">
+                        Susmita Sen
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="user-follow-info w100 mt16 df jcsb plr8">
+                    <div class="follower tac">
+                      <p class="follow-count fs16 fw6">15K</p>
+                      <p class="follow-title fs10 fc8 mt4">Followers</p>
+                    </div>
+                    <div class="following tac">
+                      <p class="follow-count fs16 fw6">990</p>
+                      <p class="follow-title fs10 fc8 mt4">Following</p>
+                    </div>
+                    <div class="requeting tac">
+                      <p class="follow-count fs16 fw6">24</p>
+                      <p class="follow-title fs10 fc8 mt4">Requests</p>
+                    </div>
+                  </div>
+                  <div class="pvt-profile-cta pt8">
+                    <div
+                      class="message-btn w100 h40 plr24 box-center br4 cp bg1 fc3 mt8"
+                    >
+                      Message
+                    </div>
+                    <div
+                      class="follow-btn w100 h40 plr24 box-center br4 cp bg6 fc3 mt8"
+                    >
+                      Follow
+                    </div>
+                  </div>
+                </div>
+                <div class="pvt-posts-box mlr8 brd-l2 df">
+                  <div class="pvt-sm-post p8 br2 brd2 bg3">
+                    <div class="pvt-sm-post-top v-center jcsb h24">
+                      <p class="fc2 fs12">Lal Kila . Delhi</p>
+                      <p class="fc2 fs12">12m</p>
+                    </div>
+                    <div class="pvt-sm-post-mid df flx1">
+                      <img src="images/pics01.jpg" alt="Pics1" />
+                    </div>
+                    <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                      <p class="v-center">
+                        <span class="material-symbols-outlined fc8 fs18 mr4">
+                          favorite
+                        </span>
+                        120
+                      </p>
+                      <p class="v-center">
+                        <span class="material-symbols-outlined fc8 fs18 mr4">
+                          chat_bubble </span
+                        >46
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pvt-sm-post p8 br2 brd2 bg3">
+                    <div class="pvt-sm-post-top v-center jcsb h24">
+                      <p class="fc2 fs12">Kullu . Manali</p>
+                      <p class="fc2 fs12">12m</p>
+                    </div>
+                    <div class="pvt-sm-post-mid df flx1">
+                      <img src="images/pics02.jpg" alt="Pics2" />
+                    </div>
+                    <div class="pvt-sm-post-btm v-center jcsb fc2 fs12 h24">
+                      <p class="v-center">
+                        <span class="material-symbols-outlined fc8 fs18 mr4">
+                          favorite
+                        </span>
+                        76
+                      </p>
+                      <p class="v-center">
+                        <span class="material-symbols-outlined fc8 fs18 mr4">
+                          chat_bubble </span
+                        >32
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="option-icon mt8"></div>
+          </div>
+          <div class="post-detail mt16">
+            <div class="post-pics df fdc">
+              <img src="images/pics10.jpg" alt="Pics1" />
+            </div>
+          </div>
+        </article>
+        <div class="modal-actions mr16 mt32 pt32 pr freeze-start">
+          <div
+            class="actions-buttons v-center fdc mt48 cp pr"
+            onclick='freezetag(event, "freeze","freeze-tag-on" )'
+          >
+            <div class="actions-btn-icon box-center h48 w48 br50 bg5">
+              <img src="images/snowflake.svg" alt="freeze post" class="h24" />
+            </div>
+            <div class="actions-btn-title fs12 mt8">Freeze Tag(2)</div>
+            <div class="action-suggetion transit1 pa aft">
+              <p class="fs14 fw6">Freeze Your Friends.</p>
+            </div>
+          </div>
+
+          <div
+            class="actions-buttons v-center fdc mt48 cp pr"
+            onclick='freezetag(event,"comment","comment-tag-on1")'
+          >
+            <div class="actions-btn-icon box-center h48 w48 br50 bg5">
+              <span class="material-symbols-outlined fc10 fs24">
+                chat_bubble
+              </span>
+            </div>
+            <div class="actions-btn-title fs12 mt8">comments</div>
+            <div class="action-suggetion transit1 pa aft">
+              <p class="fs14 fw6">Express your perspective through a comment</p>
+            </div>
+          </div>
+          <div
+            class="actions-buttons v-center fdc mt48 cp pr"
+            onclick='freezetag(event,"freeze-request","freeze-req-on1")'
+          >
+            <div class="actions-btn-icon box-center h48 w48 br50 bg5">
+              <img
+                src="images/freeze-request-01.png"
+                alt="freeze post"
+                class="h24"
+              />
+            </div>
+            <div class="actions-btn-title fs12 mt8">Freeze Request(22)</div>
+            <div class="action-suggetion transit1 pa aft">
+              <p class="fs14 fw6">Your friends' request to connect is on ice</p>
+            </div>
+          </div>
+          <div class="actions-buttons v-center fdc mt48 cp">
+            <div class="actions-btn-icon box-center h48 w48 br50 bg5">
+              <span class="material-symbols-outlined fc10 fs24">
+                bookmarks
+              </span>
+            </div>
+            <div class="actions-btn-title fs12 mt8">Save</div>
+          </div>
+
+          <div class="freeze-tag-block1">
+            <div
+              class="t0 r0 mt16 pt4 right-sift box-center h24 w48 pa cp"
+              onclick='freezetagclose(event,"freeze","freeze-tag-on")'
+            >
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+            <h3 class="fw6 fc1 mb8">All Freezed Tags</h3>
+            <div class="freeze-btn-tags v-center jce mt16">
+              <div
+                class="new-freeze-btn box-center cp plr8 pt4 pb4 fs12 ttu fc7 fw6"
+              >
+                <img
+                  src="images/snowflake.svg"
+                  alt="freeze post"
+                  class="h18 mr4"
+                />New Freeze
+              </div>
+            </div>
+            <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+              <div class="tag-details v-center pr zi1 flx100">
+                <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0">
+                  <span class="material-symbols-outlined fc6 fs16">
+                    delete
+                  </span>
+                </p>
+                <div
+                  class="tag-frame ofh w48 h48"
+                  style="
+                    background-image: url(images/pics01.jpg);
+                    background-position: -625px -235px;
+                  "
+                ></div>
+                <div class="tag-title-box ml8">
+                  <div class="tag-title fs14 fw5 fc1">Sradha Singh</div>
+                  <div class="tag-rel fs12 fc2 mt4">Sister, 2 days ago</div>
+                </div>
+              </div>
+              <div class="tag-detail v-center jcsb w100 mt8 pt8 brd-t2">
+                <h3 class="tag-by fs12 fw5 fc2">By Suresh bararia</h3>
+              </div>
+            </div>
+
+            <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+              <div class="tag-details v-center pr zi1 flx100">
+                <div
+                  class="tag-frame ofh w48 h48"
+                  style="
+                    background-image: url(images/pics01.jpg);
+                    background-position: -535px -242px;
+                  "
+                ></div>
+                <div class="tag-title-box ml8">
+                  <div class="tag-title fs14 fw5 fc1">Raj's Camera</div>
+                  <div class="tag-rel fs12 fc2 mt4">Besties, 4 days ago</div>
+                </div>
+              </div>
+              <div class="tag-detail v-center jcsb w100 mt8 pt8 brd-t2">
+                <h3 class="tag-by fs12 fw5 fc2">By Aman Mehra</h3>
+              </div>
+            </div>
+            <div class="tag-item brd2 br2 p16 v-center fww jcsb mt12">
+              <div class="tag-details v-center pr zi1 flx100">
+                <div
+                  class="tag-frame ofh w48 h48"
+                  style="
+                    background-image: url(images/pics01.jpg);
+                    background-position: -410px -255px;
+                  "
+                ></div>
+                <div class="tag-title-box ml8">
+                  <div class="tag-title fs14 fw5 fc1">Sunset Time</div>
+                  <div class="tag-rel fs12 fc2 mt4">Nature, 8 days ago</div>
+                </div>
+              </div>
+              <div class="tag-detail v-center jcsb w100 mt8 pt8 brd-t2">
+                <h3 class="tag-by fs12 fw5 fc2">By Aman Mehra</h3>
+                <div class="tag-add">
+                  <p class="cp fc7 fs10 ttu fw6 v-center">
+                    <span class="material-symbols-outlined fc10 fs18">
+                      chat_bubble </span
+                    >Comment(0)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-tag-block1 pr">
+            <div
+              class="t0 r0 mt16 pt4 right-sift box-center h24 w48 pa cp"
+              onclick='freezetagclose(event,"comment","comment-tag-on1")'
+            >
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+            <h3 class="fw6 fc1 mb8">All Comments</h3>
+            <div class="comment-actions v-center mt12 pb16 fww">
+              <form class="bubble-form mt16 v-center fww flx100">
+                <input
+                  type="text"
+                  id="replyComment"
+                  name="replyComment"
+                  placeholder="...write a speech bubble"
+                  class="h32 brd2 fs12 flx1 plr8"
+                />
+                <button class="bg1 fc3 fs12 h32 plr16 ttu">comment</button>
+              </form>
+            </div>
+            <div class="tag-item v-center fww jcsb mt12">
+              <div class="tag-details v-center pr zi1 flx100">
+                <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0 mt12">
+                  <span class="material-symbols-outlined fc6 fs16">
+                    favorite
+                  </span>
+                </p>
+                <div class="suggest-detail df w100">
+                  <div class="avtar-icon v-center fdc">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-02.jpg" alt="user pics" />
+                    </div>
+                    <div class="comment-time fc2 fs13 flx1">1m</div>
+                  </div>
+
+                  <div class="suggest-text flx1 ml8">
+                    <h3 class="suggest-name fs11 ttu fw5 fc1 mt8">
+                      Tanvi Saxena
+                    </h3>
+                    <h3 class="tag-comment fs13 fw3 fc2 mt4">
+                      Beautiful photo capture, it brings back nostalgic
+                      memories.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tag-item v-center fww jcsb mt24">
+              <div class="tag-details v-center pr zi1 flx100">
+                <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0 mt12">
+                  <span class="material-symbols-outlined fc6 fs16">
+                    favorite
+                  </span>
+                </p>
+                <div class="suggest-detail df w100">
+                  <div class="avtar-icon v-center fdc">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-04.jpg" alt="user pics" />
+                    </div>
+                    <div class="comment-time fc2 fs13 flx1">1w</div>
+                  </div>
+
+                  <div class="suggest-text flx1 ml8">
+                    <h3 class="suggest-name fs11 ttu fw5 fc2 mt8">
+                      Ramandeep Kaur
+                    </h3>
+                    <h3 class="tag-comment fs13 fw3 fc2 mt4">
+                      nostalgic memories.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tag-item v-center fww jcsb mt24">
+              <div class="tag-details v-center pr zi1 flx100">
+                <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0 mt12">
+                  <span class="material-symbols-outlined fc6 fs16">
+                    favorite
+                  </span>
+                </p>
+                <div class="suggest-detail df w100">
+                  <div class="avtar-icon v-center fdc">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-03.jpg" alt="user pics" />
+                    </div>
+                    <div class="comment-time fc2 fs13 flx1">1w</div>
+                  </div>
+
+                  <div class="suggest-text flx1 ml8">
+                    <h3 class="suggest-name fs11 ttu fw5 fc2 mt8">
+                      Neha Shukla
+                    </h3>
+                    <h3 class="tag-comment fs13 fw3 fc2 mt4">
+                      Such a lovely photo...
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tag-item v-center fww jcsb mt24">
+              <div class="tag-details v-center pr zi1 flx100">
+                <p class="untag cp fc6 fs10 ttu fw6 pa t0 r0 mt12">
+                  <span class="material-symbols-outlined fc6 fs16">
+                    favorite
+                  </span>
+                </p>
+                <div class="suggest-detail df w100">
+                  <div class="avtar-icon v-center fdc">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-04.jpg" alt="user pics" />
+                    </div>
+                    <div class="comment-time fc2 fs13 flx1">1w</div>
+                  </div>
+
+                  <div class="suggest-text flx1 ml8">
+                    <h3 class="suggest-name fs11 ttu fw5 fc2 mt8">
+                      Naresh Singh
+                    </h3>
+                    <h3 class="tag-comment fs13 fw3 fc2 mt4">
+                      Evokes fond memories of the past.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="freeze-req-block1 pr">
+            <div
+              class="t0 r0 mt16 pt4 right-sift box-center h24 w48 pa cp"
+              onclick='freezetagclose(event,"freeze-request","freeze-req-on1")'
+            >
+              <span class="material-symbols-outlined"> arrow_forward </span>
+            </div>
+            <h3 class="fw6 fc1 mb8">All Freeze Request</h3>
+            <div class="tag-item v-center fww jcsb mt12">
+              <div class="tag-details v-center pr zi1 flx100">
+                <div class="suggest-detail df w100 cp">
+                  <div class="suggest-text v-center flx1 mt16">
+                    <div class="add-comment w100 v-center jcsb">
+                      <form
+                        action="post"
+                        class="comment-input v-center fww pr flx1"
+                      >
+                        <label for="friendName" class="fs14 fw5 fc2 flx100 mb8"
+                          >New Request</label
+                        >
+                        <input
+                          type="text"
+                          name="friendName"
+                          id="friendName"
+                          placeholder="Friend Name"
+                          class="plr16 h40 bg3 brd2 fs12 flx1"
+                        />
+                        <div
+                          class="comment-time fs13 ttu plr8 box-center h40 bg1 fc3 mla"
+                        >
+                          Request
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sugget-items mt24">
+              <div class="fs14 fw5 fc2 flx100 mb8 v-center">
+                <label for="filterRequest1" class="v-center">
+                  <input
+                    name="filterRequest"
+                    type="radio"
+                    id="filterRequest1"
+                    value="toMe"
+                    checked="checked"
+                    onclick="showContent('toMe')"
+                  />To me
+                </label>
+                <label for="filterRequest2" class="v-center ml16">
+                  <input
+                    type="radio"
+                    name="filterRequest"
+                    id="filterRequest2"
+                    value="byMe"
+                    onclick="showContent('byMe')"
+                  />By me
+                </label>
+              </div>
+
+              <div
+                class="suggest-items"
+                id="toMeContent"
+                style="display: block"
+              >
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-04.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Suresh bararia
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Singing, Cricket, Design
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc7 fs10 ttu fw6">Accept</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-02.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Tanvi Saxena
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Drawing, Tenish, Reading
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc6 fs10 ttu fw6">Unsubscribe</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-default.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">Manoj Singh</h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Dance, Tenish, Reading
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc7 fs10 ttu fw6">Accept</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-03.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Sneha Pandey
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Music, Dance, Singing
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc8 fs10 ttu fw6">Expired</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="suggest-items2"
+                id="byMeContent"
+                style="display: none"
+              >
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-default.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">Manoj Singh</h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Dance, Tenish, Reading
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc7 fs10 ttu fw6">Accept</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-03.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Sneha Pandey
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Music, Dance, Singing
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc8 fs10 ttu fw6">Expired</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-04.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Suresh bararia
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Singing, Cricket, Design
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc7 fs10 ttu fw6">Accept</p>
+                  </div>
+                </div>
+                <div class="sugget-item v-center jcsb mt12">
+                  <div class="suggest-detail v-center cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-02.jpg" alt="user pics" />
+                    </div>
+                    <div class="suggest-text ml8">
+                      <h3 class="suggest-name fs12 ttu fw5 fc2">
+                        Tanvi Saxena
+                      </h3>
+                      <p class="suggest-skill fs10 fc8">
+                        Drawing, Tenish, Reading
+                      </p>
+                    </div>
+                  </div>
+                  <div class="suggest-add">
+                    <p class="cp fc6 fs10 ttu fw6">Unsubscribe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="breakTheIce" class="brek-ice-modal v-center fdc aft">
+      <span class="ice-box-close-icon pa r0 v-center">
+        <span class="ice-box-close-icons pr">
+          <div
+            class="freeze-friends-details pr box-center fdc cp bg3 brd2 p8 zi99"
+            onclick="displayModal(event)"
+          >
+            <div class="user-pics-sm pr zi1 bounce-effect">
+              <img src="images/avatar-02.jpg" alt="user pics" />
+              <div class="icecreate1 pa t0 w100">
+                <img
+                  src="images/ice/ice-box-04.png"
+                  alt="ice frame"
+                  class="w100"
+                />
+              </div>
+            </div>
+            <div class="freexe-tray tray-shape-01">
+              <img src="images/ice/ice-tray-01.png" alt="tray 01" class="w56" />
+            </div>
+            <div class="freeze-friends-text ml8">
+              <h3 class="freeze-friends-name fs11 ttu fw5 fc2">
+                Monisha Singh
+              </h3>
+            </div>
+          </div>
+          <span
+            onclick="closeModal()"
+            class="close-cut-icon box-center brd1 br50 w-m32 h32 fs11 bg2 fc3 cp pa zi99"
+          >
+            <span class="material-symbols-outlined"> close </span>
+          </span>
+          <span class="trangle-icon transit4 pa"></span> </span
+      ></span>
+      <div class="add-smiley bti-bg br50 box-center fdc" id="addSmiley">
+        <img
+          src="images/breakice/smileyIcon.svg"
+          alt="Add a Smiley Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Add a Smiley</span>
+      </div>
+      <div class="crush-profile bti-bg br50 box-center fdc" id="crushProfile">
+        <img
+          src="images/breakice/crushIcon.svg"
+          alt="Crush The Profile Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Crush The Profile</span>
+      </div>
+      <div class="puzzle-game bti-bg br50 box-center fdc" id="PuzzleGame">
+        <img
+          src="images/breakice/puzzleIcon.svg"
+          alt="Puzzle Game Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Puzzle Game</span>
+      </div>
+      <div
+        class="send-v-message bti-bg br50 box-center fdc"
+        id="SendVideoMessage"
+      >
+        <img
+          src="images/breakice/videoMessageIcon.svg"
+          alt="Send Video Message Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Send Video Message</span>
+      </div>
+      <div class="q-n-a bti-bg br50 box-center fdc" id="sendQUAMessage">
+        <img
+          src="images/breakice/qnaIcon.svg"
+          alt="Question and Answer Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Question & Answer</span>
+      </div>
+      <div
+        class="send-future-message bti-bg br50 box-center fdc"
+        id="sendFutureMessage"
+      >
+        <img
+          src="images/breakice/futureMessageIcon.svg"
+          alt="Send a Future Message Icon"
+          class="mb8 h48"
+        />
+        <span class="break-title">Send Future Message</span>
+      </div>
+      <div class="form-upload-model form-modal" id="formMessage">
+        <div class="form-section">
+          <div
+            class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+            id="closeModal"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <form class="form-contents p16">
+            <div class="form-heading pb12 v-center ttma cp">
+              <img src="images/send-message-icon.svg" alt="send-message-icon" />
+              <h2 class="form-main-text fs16 fw6 tal fc7 ml12">
+                Send Future Message
+              </h2>
+            </div>
+            <div class="form-frnd df fdc mb16 mt16">
+              <label for class="tal fs12">Find a Friend :</label>
+              <input
+                type="text"
+                placeholder="Manoj Singh"
+                required
+                class="flx1 ptb12 bg4 plr8 br4 mtb12"
+              />
+            </div>
+            <div class="form-schedule df fdc mb16">
+              <label for class="tal fs12">Schedule after :</label>
+              <input
+                type="date"
+                required="03-May-2024"
+                class="flx1 ptb12 bg4 plr8 br4 mtb12"
+              />
+            </div>
+            <div class="form-message df fdc mb16">
+              <label for class="tal fs12">Message :</label>
+              <textarea
+                name="text"
+                id
+                rows="7"
+                placeholder="Message"
+                required="required"
+                class="text-box flx1 bg4 plr8 br4 pt12 fc8 mtb12"
+              ></textarea>
+            </div>
+            <div class="form-buttons df jcc">
+              <button class="form-submit bg1 h40 plr24 br4 fc4 ls1 fw5 cp mlr8">
+                Submit
+              </button>
+              <button
+                class="form-reset bg4 h40 plr24 br4 ls1 fw5 cp mlr8"
+                id="resetButton"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="q-n-a-model form-modal" id="qna">
+        <div class="q-n-a-section">
+          <div
+            class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+            id="closeModal1"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <div class="q-n-a-containers p12">
+            <div class="form-heading pb12 v-center ttma cp">
+              <img src="images/q-a-icon.svg" alt="q-a-icon" />
+              <h2 class="form-main-text fs16 fw6 tal fc7 ml12">
+                Question & Answer
+              </h2>
+            </div>
+            <form class="q-n-q-item-detail df fdc jcsb fs12">
+              <div class="form-frnd df ptb12 w100">
+                <input
+                  type="text"
+                  placeholder="Manoj Singh"
+                  required
+                  class="flx1 ptb12 bg4 plr8 br4 mtb12"
+                />
+              </div>
+              <div class="form-questions df fdc">
+                <select class="select-question df bg4 plr8 br4 ptb12 mb12">
+                  <option value="select option" class="ptb12">
+                    Select Question
+                  </option>
+                  <option value="select option" class="ptb12">
+                    Enter your Last name
+                  </option>
+                  <option value="select option" class="ptb12">
+                    Enter your favorite colour
+                  </option>
+                  <option value="select option" class="ptb12">
+                    Enter your pet name
+                  </option>
+                </select>
+              </div>
+              <div class="form-frnd df fdc ptb12 w100">
+                <label for class="tal ttma">Enter your own question</label>
+                <textarea
+                  name="text"
+                  id
+                  rows="5"
+                  required="required"
+                  class="text-box flx1 bg4 plr8 br4 pt12 fc8 mtb12"
+                ></textarea>
+              </div>
+              <div class="form-buttons df jcc">
+                <button
+                  class="form-reset bg4 h40 plr24 br4 ls1 fw5 cp mlr8"
+                  id="resetButton"
+                >
+                  Reset
+                </button>
+                <button
+                  class="form-submit bg1 h40 plr24 br4 fc4 ls1 fw5 cp mlr8"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="c-p-m-model c-p-ms-modal" id="cpm">
+        <div class="c-p-m-section">
+          <div
+            class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+            id="closeModal2"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <div class="c-p-m-containers p12">
+            <img
+              src="images/breakice/crushIcon.svg"
+              alt="Crush The Profile Icon"
+              class="mb8 h48 mb24"
+            />
+            <div class="c-p-m-successful df jcc">
+              <h4 class="c-p-m-heading fs14 fw6 fc2 pb16 v-center">
+                <span class="material-symbols-outlined tick-color mr8">
+                  verified
+                </span>
+                Successfully!!
+              </h4>
+            </div>
+            <p class="c-p-m-subtext fs14 fc8 lh22 mb24">Crush the Profile.</p>
+            <button
+              class="form-submit bg4 brd2 h40 plr24 fs13 br24 fc1 bg-h1 fc-h1 transit2 ls1 fw5 cp mlr8"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="smily-model smilys-modal" id="smily">
+        <div class="smily-section">
+          <div
+            class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+            id="closeModal3"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <div class="c-p-m-containers p12">
+            <span class="material-symbols-outlined mb24 smily-icon">
+              sentiment_satisfied
+            </span>
+            <div class="c-p-m-successful df jcc">
+              <h4 class="c-p-m-heading fs14 fw6 fc2 pb16 v-center">
+                <span class="material-symbols-outlined tick-color mr8">
+                  verified
+                </span>
+                Successfully!!
+              </h4>
+            </div>
+            <p class="c-p-m-subtext fs14 fc8 lh22 mb24">Smily is send.</p>
+            <button
+              class="form-submit bg4 brd2 h40 plr24 fs13 br24 fc1 bg-h1 fc-h1 transit2 ls1 fw5 cp mlr8"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="puzzel-model puzzels-modal" id="puzzel">
+        <div class="puzzel-section">
+          <div
+            class="photo-modal-close pa t0 r0 mt8 mr8 cp h24 w24 box-center"
+            id="closeModal4"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <div class="puzzel-containers p12">
+            <img
+              src="images/breakice/puzzleIcon.svg"
+              alt="Puzzle Game Icon"
+              class="mb8 h48 mb24"
+            />
+            <div class="c-p-m-successful df jcc">
+              <h4 class="c-p-m-heading fs14 fw6 fc2 pb16 v-center">
+                <span class="material-symbols-outlined tick-color mr8">
+                  verified
+                </span>
+                Successfully!!
+              </h4>
+            </div>
+            <p class="puzzel-subtext fs14 fc8 lh22 mb24">
+              Puzzle Game is done.
+            </p>
+            <button
+              class="form-submit bg4 brd2 h40 plr24 fs13 br24 fc1 bg-h1 fc-h1 transit2 ls1 fw5 cp mlr8"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="photo-upload-modal photos-modal" id="video-upload-modals">
+        <div class="video-upload-section">
+          <div
+            class="photo-modal-close pa t0 r0 cp h24 mt8 mr8 w24 box-center"
+            id="closeModal5"
+          >
+            <span class="material-symbols-outlined fs24 fc2"> close </span>
+          </div>
+          <div class="video-n-preview-box">
+            <!-- <h2 class="form-heading fs16 fw6 tal fc7 pb16">Video Message</h2> -->
+            <div class="form-heading pb12 v-center ttma cp">
+              <img src="images/video-message.svg" alt="q-a-icon" />
+              <h2 class="form-main-text fs16 fw6 tal fc7 ml12">
+                Video Message
+              </h2>
+            </div>
+            <form class="photo-upload-boxs" id="photoUpForm">
+              <div
+                class="video-upload-area v-center fdc mb24"
+                id="photoUploadContainer"
+              >
+                <input
+                  type="file"
+                  id="photo"
+                  name="photo"
+                  accept="image/*"
+                  multiple
+                  style="display: none"
+                />
+                <div class="box-center fdc w100" id="photoDropZone">
+                  <div class="photo-upload-icon mb8 mt16">
+                    <img src="images/video-svg-icon.svg" alt />
+                  </div>
+
+                  <p class="fs14 df">
+                    <span class="fw6 mr4">Drag &amp; Drop</span> your video here
+                  </p>
+                  <p class="max-notes fs12 fc8 mt4">
+                    (max 1 video can be uploaded**)
+                  </p>
+                  <p class="mtb8">or</p>
+                </div>
+
+                <button
+                  type="button"
+                  id="uploadBtn"
+                  class="upload-btn plr24 br4 box-center bg5 cp fc4 fs14 ttu h48"
+                >
+                  Upload Video
+                </button>
+              </div>
+              <div class="form-buttons df jcc">
+                <button
+                  class="form-reset bg4 h40 plr24 br4 ls1 fw5 cp mlr8"
+                  id="resetButton"
+                >
+                  Reset
+                </button>
+                <button
+                  class="form-submit bg1 h40 plr24 br4 fc4 ls1 fw5 cp mlr8"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script-index-v01.js"></script>
+    <script src="script-select-input.js"></script>
+  </body>
+</html>

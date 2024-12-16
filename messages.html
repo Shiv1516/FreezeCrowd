@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Messages - FreezeCrowd</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+  </head>
+  <body>
+    <div class="body-bg"></div>
+    <header class="header pr zi99">
+      <div class="wrapper v-center jcsb">
+        <div class="logo-search-box v-center">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/freezecrowd-logo-dark.png"
+                alt="FreezeCrowd Logo"
+              />
+            </a>
+          </div>
+          <form action="post" class="top-search v-center pr ml24">
+            <span class="material-symbols-outlined pa ml16 fc2 fs24">
+              search
+            </span>
+            <input
+              type="text"
+              placeholder="Search"
+              class="h40 br24 bg3 plr48 brd2 fs14"
+            />
+          </form>
+        </div>
+        <nav class="navbar pr">
+          <ul class="nav-items v-center">
+            <li class="nav-item pr aft">
+              <a href="index.html" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  home
+                </span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="my-photos.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  photo_camera
+                </span>
+                Photo
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a href="friends.html" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  diversity_3
+                </span>
+                Friends
+              </a>
+            </li>
+            <li class="nav-item pr aft active">
+              <a
+                href="messages.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    Chat
+                  </span>
+                  <span class="item-count box-center blue">27</span>
+                </span>
+                Messages
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="notifications.html"
+                class="nav-link v-center fdc fs12 fc2 pb4"
+              >
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    notifications
+                  </span>
+                  <span class="item-count box-center red">8</span>
+                </span>
+                Notification
+              </a>
+              <ul class="notify-dd-list bg3 brd2 p16 pa dn">
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class="">
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg2 fc3 fs14 box-center">
+                    RV
+                  </span>
+                  <span class="">
+                    <b>Rishav Varti</b> shared new photo.
+                    <a href="#" class="fs12 fc2 fc8">see photo</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class="">
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-settings pr">
+          <ul class="user-items v-center" onclick="userSettings()">
+            <li class="seprate-nav"></li>
+            <li class="nav-user v-center fc2 ml16 cp">
+              <div class="avatar box-center">
+                <img src="images/avatar-default.jpg" alt="Sandeep Pics" />
+              </div>
+              <div class="user-name fs14 fw5 ml8">Sandeep</div>
+              <span class="material-symbols-outlined fs18 ml4">
+                expand_more
+              </span>
+            </li>
+          </ul>
+          <div
+            id="userSettings"
+            class="userSettings pa t0 r0 p16 bg3 brd2 br2 dn"
+          >
+            <div class="user-info w100 h-center ais fww">
+              <div class="user-bg-box flx100 anim-bg"></div>
+              <div class="user-pics pr zi1">
+                <img src="images/avatar-default.jpg" alt="user pics" />
+              </div>
+              <div class="user-detail pr zi1 flx1 ml12">
+                <h2 class="user-name fs15 fw5 mt8">`</h2>
+                <p class="user-name fs12 fc8 mt4">sandeep@freezecrowd.in</p>
+              </div>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> person </span
+                >Personal Information
+              </p>
+              <div class="article-devide"></div>
+              <a href="user-settings.html" class="fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> tune </span>User
+                Settings
+              </a>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8">
+                  notifications </span
+                >Notification Setting
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> report </span
+                >Report
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2 pb24">
+                <span class="material-symbols-outlined mr8"> logout </span>Log
+                Out
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main inside-main">
+      <div class="main-board wrapper df ais mt24 fww">
+        <section class="user-info-block bg3 block-design">
+          <article class="user-info w100 plr16 h-center ais fww">
+            <div class="user-bg-box flx100 mt16 pr ofh">
+              <div class="snowfall-container"></div>
+            </div>
+            <div class="user-pics pr zi1">
+              <a href="add-profile.html">
+                <img src="images/avatar-default.jpg" alt="user pics" />
+              </a>
+            </div>
+            <div class="user-detail pr zi1 flx1 ml12">
+              <h2 class="user-name fs14 fw5 mt8">
+                <a href="add-profile.html"> Sandeep Beniwal </a>
+              </h2>
+              <p class="user-name fs10 fc8 mt4">sandeep@freezecrowd.in</p>
+            </div>
+            <div class="profile-status w100">
+              <h2 class="fc2 fs12">
+                Profile: <span class="fc7 fw6">60%</span>
+              </h2>
+
+              <div class="prfile-status-bar pr mt8 mb16">
+                <div class="bar-line blank-bar"></div>
+                <div
+                  class="bar-line fill-bar pa zi1 t0 l0"
+                  style="width: 60%"
+                ></div>
+              </div>
+              <div class="add-info-btn fs11 fc2 box-center mb16">
+                <a href="add-profile.html" class="pt8 pb8 brd2 plr16 br2">
+                  Add Information to your Profile
+                </a>
+              </div>
+            </div>
+            <div class="user-follow-info flx100 mt16 df jcsb plr8">
+              <div class="follower tac">
+                <p class="follow-count fs16 fw6">15K</p>
+                <p class="follow-title fs10 fc8 mt4">Followers</p>
+              </div>
+              <div class="following tac">
+                <p class="follow-count fs16 fw6">990</p>
+                <p class="follow-title fs10 fc8 mt4">Following</p>
+              </div>
+              <div class="requeting tac">
+                <p class="follow-count fs16 fw6">24</p>
+                <p class="follow-title fs10 fc8 mt4">Requests</p>
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="skill-info w100 plr16 pt8">
+            <div class="title-grp v-center jcsb">
+              <h2 class="article-title fs12 ttu fc8 fw5">Interests</h2>
+              <div class="option-icon"></div>
+            </div>
+            <div class="skill-chips v-center fww pt16">
+              <div class="skill-chip">Rich Dad Poor Dad</div>
+              <div class="skill-chip">Book: Forth Wing</div>
+              <div class="skill-chip">Singing</div>
+              <div class="skill-chip">Cricket</div>
+              <div class="skill-chip">Reading</div>
+              <div class="skill-chip">Travel</div>
+              <div class="skill-chip">Designing</div>
+              <div class="skill-chip">Paintion</div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="recent-info w100 plr16 pt8">
+            <div class="title-grp v-center jcsb">
+              <h2 class="article-title fs12 ttu fc8 fw5">Recent</h2>
+              <div class="option-icon"></div>
+            </div>
+            <div class="profile-view v-center jcsb mt24">
+              <h3 class="box-title fs12 fc8">Profile View</h3>
+              <p class="box-text fs13 fw6 fc7">62</p>
+            </div>
+            <div class="profile-imp v-center jcsb mt16">
+              <h3 class="box-title fs12 fc8">Profile Impression</h3>
+              <p class="box-text fs13 fw6 fc7">28</p>
+            </div>
+            <div class="profile-req v-center jcsb mt16">
+              <h3 class="box-title fs12 fc8">Total Friend Request</h3>
+              <p class="box-text fs13 fw6 fc6 tdu">04</p>
+            </div>
+            <div class="title-grp v-center jcsb mt24">
+              <h3 class="article-title fs10 ttu fc7 fw7">Tags</h3>
+            </div>
+            <div class="tags-item">
+              <p class="tag-item v-center fs12 fc8 mtb8">
+                <span class="material-symbols-outlined fs18 fc2 mr16">
+                  groups_2
+                </span>
+                Meetting Scheduled @9
+              </p>
+              <p class="tag-item v-center fs12 fc8 mtb8">
+                <span class="material-symbols-outlined fs18 fc2 mr16">
+                  tag
+                </span>
+                MusicNight
+              </p>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="disc-more pb24 h-center">
+            <h2
+              class="box-center fs14 fw5 fc7 pt8 brd2 br4 ptb12 cp plr24 ttu bg4"
+            >
+              Discover More
+            </h2>
+          </article>
+        </section>
+        <section class="user-post-block flx1 ml24 bg3">
+          <div class="message-page-heading w100 mt32 plr16 v-center fdc">
+            <span class="material-symbols-outlined fc2 nav-icon lh24 mb4">
+              Chat
+            </span>
+            <h1 class="fs18 fw6 fc2">Message</h1>
+          </div>
+          <div class="message-cards cp df fww pb24 br2 w100 plr16">
+            <article class="message-list flx33 bg3 pb16 mt32 brd2">
+              <div class="message-search h48 df brd-b1">
+                <input type="text" placeholder="Search by sender name" />
+                <div class="search-btn box-center w48 brd-l1">
+                  <span class="material-symbols-outlined pa fc2 fs24">
+                    search
+                  </span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-02.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">Neha Dolkira</p>
+                      <span class="message-time fs10 fc8">6 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">Navika Kumari</p>
+                      <span class="message-time fs10 fc8">2 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-default.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">Suresh Pandey</p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-02.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">Parmila Pongal</p>
+                      <span class="message-time fs10 fc8">6 weeks ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-default.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+              <div class="message-item df jcsb mt12 brd-b1 plr8 pb8">
+                <div class="message-item-detail df cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="message-item-text ml8 mt4">
+                    <p class="suggest-name fs13 ttu lh20 fc2 text-row lc2">
+                      Hi, Friends. I am glad to see you on freezecrowd. Let's
+                      connect!
+                    </p>
+                    <div class="messagre-credits v-center jcsb mt8">
+                      <p class="message-owner fs11 fc1 fw7">
+                        Ramesh Jayshankar
+                      </p>
+                      <span class="message-time fs10 fc8">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="message-add box-center ml4 mt8">
+                  <span class="cp br50"></span>
+                </div>
+              </div>
+            </article>
+            <article class="message-display df fdc jcsb flx1 bg3 mt32 brd2">
+              <div class="message-display-text w100">
+                <div class="message-display-top h64 v-center jcsb brd-b1 plr16">
+                  <h3 class="fs13 fc8 fw4">Chat with Ramesh Jayshankar</h3>
+                  <div class="option-icon"></div>
+                </div>
+                <div class="timestamp ttu fw7 fs12 tac mt24">
+                  14th feb, 2023
+                </div>
+                <div class="message-conversation mt32 ml24">
+                  <div class="message-con-credits df cp">
+                    <div class="user-pics-sm pr zi1">
+                      <img src="images/avatar-04.jpg" alt="user pics" />
+                    </div>
+                    <div class="message-item-text ml8 mt4">
+                      <div class="messagre-credits v-center mt4">
+                        <p class="message-owner fs11 fc1 fw7">
+                          Ramesh Jayshankar
+                        </p>
+                        <span class="message-time fs10 fc8 ml24"
+                          >2 days ago</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="message-send-text v-center jcsb w100 brd-t2 plr16 h48"
+              >
+                <input type="text" placeholder="Type your message..." />
+                <button class="v-center plr24 bg6 ptb8 fc3">Send</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script-myphoto-v01.js"></script>
+  </body>
+</html>

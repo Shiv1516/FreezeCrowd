@@ -1,0 +1,478 @@
+body,
+h1,h2,h3,h4,
+form, p{
+	padding:0px;
+	margin:0px;
+	color:#454545;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:none;
+	border:0px;
+	font-size:13px;
+	text-align:left;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video 
+{display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+div, h1, h2, h3, h4, p, form, label, input, textarea, img, span{
+	margin:0; padding:0;
+}
+a, img{
+	border:none;
+	 text-decoration:none;
+	color:#454545; 
+	border:0px;
+	outline:none;
+}
+.clear_both
+	{
+		clear:both;
+		padding:0px;
+		margin:0px;
+		font-family:1px;
+	}
+.bold
+	{
+	font-weight:bold;
+	}
+body
+	{
+		background-color:#2f639f;
+	}
+.bgImg
+	{
+		display:block;
+		position:absolute;
+		height: 100%;
+		left: 0%;
+		background: none repeat scroll 0% 0% #2f639f;
+	}
+.bgImg img
+	{
+		height:100%;
+	}
+.bgImg_2
+	{
+		width:100%;
+		display:block;
+		position:absolute;
+		height: 100%;
+		left: 0%;		
+	}
+.bgImg_2 img
+	{
+		height:100%;
+	}
+.header
+	{
+		background:url(../images/fc_l_headerBg.png) repeat-x left top;
+		height:50px;
+		position:relative;
+		width:100%;
+	}
+.headerMain
+	{
+		margin:0px auto;
+		width:1190px;
+	}
+.headerMain .fc_logo
+	{
+		float:left;
+		width:214px;
+		margin:6px 0px 6px 0px;
+	}
+.fc_l_t_menu
+	{
+		padding:0px;
+		margin:14px 0px 0px 40px;
+		list-style-type:none;
+		float:left;
+	}
+.fc_l_t_menu li
+	{
+		margin:0px 20px 0px 0px;
+		padding:0px;
+		float:left;
+	}
+.fc_l_t_menu li a
+	{
+		color:#fff;
+		border-radius:5px;
+		padding:6px 15px;
+		font-size:16px;
+		font-weight:normal;
+	}
+.fc_l_t_menu li a:hover
+	{
+		background-color:#128fdc;
+	}
+.fc_app
+	{
+		float:right;
+		margin:0px 120px 0px 0px;
+	}
+.iosLink, .androidLink, .windowsLink
+	{
+		color:#fff;
+		font-size:12px;
+		float:left;
+		margin:8px 30px 0px 0px;
+		width:100px;
+		font-size:13px;
+	}
+.iosLink span, .androidLink span, .windowsLink span
+	{
+		height:29px;
+		width:26px;
+		float:right;
+		display:block;
+		margin:-14px 0px 0px 15px;
+		background:url(../images/fc_appIcon.png) no-repeat left top;
+	}
+.iosLink span
+	{
+		background-position:0px 0px;
+	}
+.androidLink span
+	{
+		background-position: -55px 0px;
+	}
+.windowsLink span
+	{
+		background-position: -99px 0px;
+	}
+.fc_l_wrapper
+	{
+		margin:0px auto;
+		width:1190px;
+		position:relative;
+	}
+.fcRightMain
+	{
+		float:right;
+		width:42%;
+	}
+.registerMain, .loginMain
+	{
+		width:100%;
+		float:left;
+	}
+.registerMain h1, .loginMain h1
+	{
+		font-size:22px;
+		border-bottom:1px solid #cfe3ef;
+		padding:0px 0px 15px 0px;
+		margin:40px 10px 15px 0px;
+		color:#fff;
+		font-weight:normal;
+		text-align:center;
+		width:80%;
+		position:relative;
+	}
+.registerMain h1 span, .loginMain h1 span
+	{
+		display:block;
+		height:3px;
+		padding:0px 10px;
+		float:left;
+		border-bottom:3px solid #128fdc;
+		position:absolute;
+		bottom:-2px;
+	}
+.fc_lo_inpBox
+	{
+		border:1px solid #7ba8dc;
+		border-radius:5px;
+		padding:8px;
+		background-color:transparent;
+		width:80%;
+		color:#fff;
+		margin:0px 0px 16px 0px;
+		font-size:15px;
+		box-shadow:0px 0px 3px #034888;
+	}
+.fc_cell_100
+	{
+		width:80%;
+		margin:0px 0px 0px 40px;
+		color:#fff;
+		float:left;
+	}
+.fc_cell_100 h2
+	{
+		color:#fff;
+		font-size:14px;
+		float:left;
+		margin:0px 20px 0px 0px;
+	}
+.fc_male, .fc_female
+	{
+		float:left;
+		margin:0px 20px 0px 0px;
+	}
+.fc_terms
+	{
+		color:#fff;
+		width:80%;
+		margin:10px 0px 0px 50px;
+		float:left;
+	}
+.fc_terms a
+	{
+		color:#fff;
+		text-decoration:underline;
+	}
+.fc_terms a:hover
+	{
+		text-decoration:underline;
+	}
+.fc_loginBt, .fc_loginBt_2
+	{
+		background-color:transparent;
+		background: #00db97; /* Old browsers */
+		background: -moz-linear-gradient(top,  #00db97 0%, #7db9e8 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00db97), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #00db97 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #00db97 0%,#7db9e8 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #00db97 0%,#7db9e8 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #00db97 0%,#7db9e8 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00db97', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+		padding:10px 15px;
+		color:#fff;
+		font-size:18px;
+		font-weight:bold;
+		border:none;
+		border-radius:5px;
+		margin:20px 0px 15px 60px;
+		cursor:pointer;
+	}
+.fc_loginBt_2
+	{
+		margin:15px 0px 15px 12px;
+		opacity: 0.9;
+		filter: alpha(opacity=90);
+	}
+.fc_loginBt:hover, .fc_loginBt_2:hover
+	{
+		box-shadow:0px 0px 3px #666;
+	}
+.fc_l_error
+	{
+		float:left;
+		margin:-10px 0px 5px 10px;
+		color:#ff0000;
+		font-size:13px;
+		width:80%;
+		font-weight:bold;
+	}
+.termsServicePop
+	{
+		width:650px;
+		padding:15px;
+	}
+.fcPopUpBg
+	{
+		background:#fff;
+		float:left;
+		width:100%;
+	}
+.fcPopUpBg h1
+	{
+		font-size:22px;
+		font-weight:normal;
+		color:#0285c8;
+		border-bottom:1px solid #ccc;
+		padding:0px 0px 10px 5px;
+	}
+.fcPopUpBg h2, .fcPopUpBg h3
+	{
+		font-size:16px;
+		font-weight:normal;
+		color:#454545;
+		padding:15px 0px 0px 5px;
+	}
+.fcPopUpBg h3
+	{
+		font-size:14px;
+	}
+.fcPopUpBg p
+	{
+		padding:10px 0px 0px 0px;
+		text-align:justify;
+		line-height:18px;
+		font-size:12px;
+	}
+.fc_testmonial_L
+	{
+		background:url(../images/fc_line_t.png) repeat-x left top;
+		float:left;
+		margin:10px 0px 0px 60px;
+		padding:20px 0px 0px 0px;
+		width:80%;
+	}
+.fc_testmonial_L h2
+	{
+		color:#fff;
+		font-size:17px;
+		font-weight:normal;
+		margin:0px 0px 0px 0px;
+		text-align:center;
+	}
+.fc_testmonial_L ul
+	{
+		padding:0px;
+		margin:0px auto;
+		margin-top:15px;
+		list-style-type:none;
+		width:75%;
+	}
+.fc_testmonial_L ul li
+	{
+		padding:0px;
+		margin:0px;
+		color:#fff;
+		line-height:22px;
+		text-align:center;
+	}
+::-webkit-input-placeholder {
+   color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+.fc_footer_L
+	{
+		background:url(../images/fc_footer_b_L.png) repeat-x left bottom;
+		height:45px;
+		position:fixed;
+		bottom:0px;
+		text-align:center;
+		padding-top:15px;
+		color:#fff;
+		width:100%;
+	}
+.fc_footer_L a
+	{
+		color:#fff;
+		text-decoration:none;
+		padding:0px 15px;
+	}
+.fc_footer_L a:hover
+	{
+		text-decoration:underline;
+	}
+.fc_About_pop, .fc_PrivacyPolicy_pop, .fc_TermsService_pop, .fc_ContestRules
+	{
+		width:850px;
+		padding:15px;
+	}
+
+.fc_TermsService_pop
+	{
+		height:550px;
+		overflow:auto;
+		padding:0px 10px 0px 0px;
+	}
+.fc_TermsService_pop h2
+	{
+		color:#000;
+		margin:10px 0px 0px 0px;
+		padding:0px;
+	}
+.fc_ContestRules
+	{
+		height:550px;
+		overflow:auto;
+		padding:0px 10px 0px 0px;
+	}
+.fc_RA_Pop, .forgotPasswordPop
+	{
+		padding:15px;
+		width:550px;
+	}
+.fcinput_b_box
+	{
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-size:13px;
+		width:100%;
+		padding:10px;
+		border:1px solid #dbdbdb;
+		margin:20px 0px 0px 0px;
+	}
+.fc_blueBt, .fc_grayBt
+	{
+		background-color:#0285c8;
+		color:#fff;
+		font-size:14px;
+		border:none;
+		margin:10px 0px 10px 0px;
+		border-radius:5px;
+		padding:8px 15px;
+		cursor:pointer;
+	}
+.fc_grayBt
+	{
+		color:#454545;
+		background-color:#d8d8d8;
+		margin-left:10px;
+	}
+.loginMain .fc_loginBt
+	{
+		margin-left:40px;
+	}
+.loginMain .fc_loginBt_2
+	{
+		margin:0px 0px 15px 12px;
+	}
+.fc_margin
+	{
+		margin:10px 0px 0px -20px;
+		float:left;
+	}
+#linkWrap .Active
+	{
+	background-color:#128fdc;
+	}
+/*fadeIn code*/
+#divWrap div{
+	display:none;
+}
+#divWrap .Active{
+	display:block;
+}
+.fc_forgotPassword	
+	{
+		float:left;
+		color:#fff;
+		margin:0px 0px 0px 30px;
+		width:80%;
+	}
+.fc_forgotPassword:hover
+	{
+		text-decoration:underline;
+	}
+.fc_orText	
+	{
+		margin:0px 0px 0px 15px;
+		font-size:20px;
+		border-radius:50px;
+		border:1px solid #00bde3;
+		color:#fff;
+		padding:10px 13px;
+		box-shadow: 0px 0px 3px #ccc;
+	}
+.fc_bg
+	{
+		background:#ecf4f5 url(../images/fc_bg.jpg) repeat-x left top;
+	}

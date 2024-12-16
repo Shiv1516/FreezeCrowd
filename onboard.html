@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Welcome</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+  </head>
+  <body onload="resetForm()">
+    <div class="body-bg"></div>
+    <main class="main">
+      <div class="wrapper mt24">
+        <section class="onboard-section v-center">
+          <article class="onboard-heading flx1 mr48">
+            <div class="logo-search-box v-center">
+              <div class="logo">
+                <a href="#">
+                  <img
+                    src="images/freezecrowd-logo-dark.png"
+                    alt="FreezeCrowd Logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <h1 class="fs56 lh72 fw7 ls2">
+              Joining FreezeCrowd is EASY and FREE!
+            </h1>
+            <h2 class="fs18 ls2 mt16 fc2 pr48 lh32">
+              "Breaking the Ice: Thawing out your social presence, one post at a
+              time!"
+            </h2>
+          </article>
+          <article class="onboard-form flx40 plr40 ptb48 br8 mt48 bg3 brd2">
+            <div class="login-profile br50 ofh box-center mlra mb24 mt24">
+              <img
+                src="images/profile-login.png"
+                alt="profile login"
+                class="w100"
+              />
+            </div>
+            <h2 class="fs32 fw3 tac">Welcome to FreezeCrowd</h2>
+
+            <h3 class="fs16 mt16 fc2 tac">
+              Begin Break Your Ice Journey with Your School Email.
+            </h3>
+
+            <form class="signup-first">
+              <div class="input-box v-center">
+                <input
+                  type="email"
+                  name="schoolemail"
+                  id="schoolemail"
+                  oninput="checkSchoolEmail()"
+                  required
+                />
+                <label for="schoolemail"> School Email ID </label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="activate-login dn">
+                <p class="tc-policy fs13 fc2 pr48 mt32 fc6">
+                  **A confirmation link has been sent to your email. Kindly
+                  <a
+                    href="https://mail.google.com/mail/"
+                    target="_blank"
+                    class="fc7 tdu"
+                    >check your inbox and confirm</a
+                  >
+                  to kickstart your social journey!
+                </p>
+              </div>
+              <div class="verfied-pwd dn">
+                <div class="input-box v-center">
+                  <input
+                    type="password"
+                    name="logPassword"
+                    id="logPassword"
+                    required
+                  />
+                  <label for="logPassword"> Password </label>
+                  <span class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"></span>
+                </div>
+                <div class="forgot-log-pwd tar">
+                  <p class="tc-policy fs13 fc2 mt8 fc7 cp tdu dib">
+                    Forgot Password?
+                  </p>
+                </div>
+              </div>
+
+              <div class="btn-box mt32" id="startButton">
+                <div
+                  class="start-btn box-center cp plr32 w100 h48 bg1 br24 fc3 ttu"
+                  onclick="submitFirstStep()"
+                >
+                  Start Journey
+                </div>
+                <p class="tc-policy fs12 fc2 pr48 mt8">
+                  By signing, you agree to the
+                  <a href="#" class="fc7">Terms of Service</a> and
+                  <a href="#" class="fc7">Privacy Policy</a>, including
+                  <a href="#" class="fc7">Cookie Use</a>.
+                </p>
+              </div>
+            </form>
+          </article>
+          <article id="signup-user" class="signup-user box-center off-form">
+            <form
+              onsubmit="submitSignupUserForm(event)"
+              class="register-account onboard-form"
+            >
+              <div class="form-close fw6 pa t0 l0 p16 cp" onclick="closeform()">
+                <span class="material-symbols-outlined"> close </span>
+              </div>
+
+              <h2 class="fs32 fw5 mt48">Create Your Account.</h2>
+              <h3 class="fs16 fw5 fc7 mt8">sandeep@freezecrowd.com</h3>
+              <div class="input-box v-center">
+                <input
+                  type="type"
+                  name="studentName"
+                  id="studentName"
+                  required
+                />
+                <label for="studentName">Full Name</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-box v-center">
+                <input
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  name="userPhone"
+                  id="userPhone"
+                  required
+                />
+                <label for="userPhone">Phone</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-heading mt48">Date of birth</div>
+              <div class="input-box v-center">
+                <input type="date" name="userDOB" id="userDOB" required />
+                <label for="userDOB">DD/MM/YYYY</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <input
+                type="submit"
+                value="Register"
+                class="register-next-btn box-center plr32 w100 h48 brd2 bg5 br24 fc3 fw6 mt48"
+              />
+            </form>
+            <div class="sucessRegForm onboard-form dn w100">
+              <div
+                class="form-close fw6 pa t0 l0 p16 cp"
+                onclick="closeSucessForm()"
+              >
+                <span class="material-symbols-outlined"> close </span>
+              </div>
+              <div
+                class="sucessMessageForEmail fc9 fs17 tac lh32 box-center fdc"
+              >
+                <span class="material-symbols-outlined mt48 mb32 fs56">
+                  check_circle
+                </span>
+                You're Successfully Registered!
+                <span class="fc2 mt16 fs14 v-center fdc"
+                  >Verify your account by
+                  <a
+                    href="https://mail.google.com/mail/"
+                    target="_blank"
+                    class="fc7 tdu mt8 mb8"
+                  >
+                    checking your email
+                  </a>
+                  and take the first step into the Break Your Ice
+                  community.</span
+                >
+                <div
+                  class="register-next-btn box-center plr32 w100 h48 brd2 bg5 br24 fc3 fw6 mt48 cp"
+                  onclick="closeSucessForm()"
+                >
+                  Close
+                </div>
+              </div>
+            </div>
+            <form
+              action="post"
+              class="school-registeration onboard-form dn"
+            ></form>
+          </article>
+
+          <article id="signup-domain" class="signup-domain box-center off-form">
+            <form
+              onsubmit="submitSignupDomainForm(event)"
+              class="register-domain onboard-form"
+            >
+              <div
+                class="form-close fw6 pa t0 l0 p16 cp"
+                onclick="closeDomainform()"
+              >
+                <span class="material-symbols-outlined"> close </span>
+              </div>
+
+              <h2 class="fs32 fw5 mt48">Register School Domain.</h2>
+              <h3 class="fs16 fw5 fc7 mt8">sandeep@freezecrowd.com</h3>
+              <div class="input-heading mt48">School Details</div>
+              <div class="input-box v-center">
+                <input type="type" name="schoolName" id="schoolName" required />
+                <label for="schoolName">School Name</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-box v-center">
+                <input
+                  type="url"
+                  name="schoolWebsite"
+                  id="schoolWebsite"
+                  required
+                />
+                <label for="schoolWebsite">School Website Url</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-box v-center">
+                <input
+                  type="email"
+                  name="adminemail"
+                  id="adminemail"
+                  required
+                />
+                <label for="adminemail"> Admin Email ID </label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-heading mt48">Personal Details</div>
+              <div class="input-box v-center">
+                <input
+                  type="type"
+                  name="studentNameD"
+                  id="studentNameD"
+                  required
+                />
+                <label for="studentNameD">Full Name</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-box v-center">
+                <input
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  name="userPhoneD"
+                  id="userPhoneD"
+                  required
+                />
+                <label for="userPhoneD">Phone</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <div class="input-heading mt48">Date of birth</div>
+              <div class="input-box v-center">
+                <input type="date" name="userDOBD" id="userDOBD" required />
+                <label for="userDOBD">DD/MM/YYYY</label>
+                <span
+                  id="errorMessageEmail"
+                  class="errorMessage pa t0 r0 fs10 mt4 mr4 fc6"
+                ></span>
+              </div>
+              <input
+                type="submit"
+                value="Register"
+                class="register-next-btn box-center plr32 w100 h48 brd2 bg5 br24 fc3 fw6 mt48"
+              />
+            </form>
+            <div class="sucessDomainForm onboard-form dn w100">
+              <div
+                class="form-close fw6 pa t0 l0 p16 cp"
+                onclick="closeSucessDmainForm()"
+              >
+                <span class="material-symbols-outlined"> close </span>
+              </div>
+              <div
+                class="sucessMessageForEmail fc9 fs17 tac lh32 box-center fdc"
+              >
+                <span class="material-symbols-outlined mt48 mb32 fs56">
+                  check_circle
+                </span>
+                You're Successfully Registered!
+                <span class="fc2 mt16 fs14 v-center fdc"
+                  >Verify your account by
+                  <a
+                    href="https://mail.google.com/mail/"
+                    target="_blank"
+                    class="fc7 tdu mt8 mb8"
+                  >
+                    checking your email
+                  </a>
+                  and take the first step into the Break Your Ice
+                  community.</span
+                >
+                <div
+                  class="register-next-btn box-center plr32 w100 h48 brd2 bg5 br24 fc3 fw6 mt48 cp"
+                  onclick="closeSucessDomainForm()"
+                >
+                  Close
+                </div>
+              </div>
+            </div>
+            <form
+              action="post"
+              class="school-registeration onboard-form dn"
+            ></form>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer pf w100 b0">
+      <div class="wrapper">
+        <div class="copyright ptb16 fs12 box-center">
+          Copyright © 2017 <strong>FreezeCrowd</strong>. All Rights Reserved.
+          <a href="#" class="fc7 ml24">Privacy Policy </a>
+          <a href="#" class="fc7 ml24">Terms of Service</a>
+          <a href="#" class="fc7 ml24">Contest Rules </a>
+          <a href="#requestActLink" class="fc7 ml24" data-toggle="modal">
+            Request an activation link
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script-v02.js"></script>
+  </body>
+</html>

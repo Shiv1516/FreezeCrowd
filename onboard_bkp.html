@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Welcome</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
+    <link rel="stylesheet" href="style-v01.css" />
+  </head>
+  <body>
+    <div class="body-bg"></div>
+    <header class="header onboard">
+      <div class="wrapper v-center jcsb">
+        <div class="logo-search-box v-center">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="images/freezecrowd-logo-dark.png"
+                alt="FreezeCrowd Logo"
+              />
+            </a>
+          </div>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-items v-center">
+            <li class="nav-user v-center fc2 ml16 cp">
+              <span class="user-name fs14 fw5 ml8">Log In</span>
+            </li>
+            <li class="nav-user v-center fc2 ml16 cp" onclick="joinNowForm()">
+              <span
+                class="user-name fs14 fw5 ml8 bg1 fc3 plr24 h40 box-center br24"
+                >Sign Up</span
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper mt24">
+        <section class="onboard-section v-center">
+          <article class="onboard-heading flx1 mr48">
+            <p
+              class="title-heading plr16 fs14 ls2 ttu dif fc7 pt4 pb4 cp"
+              onclick="joinNowForm()"
+            >
+              Join Now
+            </p>
+            <h1 class="fs56 lh72 fw7 ls2">
+              Joining FreezeCrowd is EASY and FREE!
+            </h1>
+            <h2 class="fs18 ls2 mt16 fc2 pr48 lh32">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </h2>
+          </article>
+          <article class="onboard-form flx40 plr40 ptb48 br8 mt48 bg3 brd2">
+            <h2 class="fs32 fw3">Welcome to FreezeCrowd</h2>
+
+            <h3 class="fs18 fw5 mt16 fc2">
+              Join today with your school email.
+            </h3>
+
+            <form class="signup-first">
+              <div class="input-box v-center">
+                <input
+                  type="email"
+                  name="schoolemail"
+                  id="schoolemail"
+                  required
+                />
+                <label for="schoolemail"> School Email ID </label>
+              </div>
+              <div class="input-box v-center">
+                <input
+                  type="password"
+                  name="logPassword"
+                  id="logPassword"
+                  required
+                />
+                <label for="logPassword"> Password </label>
+              </div>
+
+              <div class="btn-box mt32">
+                <div
+                  class="create-account-btn box-center cp plr32 w100 h48 bg1 br24 fc3 ttu"
+                >
+                  Log In
+                </div>
+                <p class="tc-policy fs12 fc2 pr48 mt8">
+                  By signing up, you agree to the
+                  <a href="#" class="fc7">Terms of Service</a> and
+                  <a href="#" class="fc7">Privacy Policy</a>, including
+                  <a href="#" class="fc7">Cookie Use</a>.
+                </p>
+              </div>
+            </form>
+            <div class="sign-in-grp">
+              <h3 class="fs22 fw5 mt48 pt16">
+                Join today with your school email!
+              </h3>
+              <div
+                class="create-account-btn box-center cp plr32 w100 h48 brd3 br24 fc7 fw6 mt24"
+              >
+                Sign Up
+              </div>
+            </div>
+          </article>
+          <article class="sign-up-2 box-center off-form">
+            <form action="post" class="register-account onboard-form">
+              <div class="form-close fw6 pa t0 l0 p16 cp" onclick="closeform()">
+                <span class="material-symbols-outlined"> close </span>
+              </div>
+              <div class="steps-form fw6 fc7 fs18 pa t0 r0 pt24 pr16">
+                <span>1/4 steps</span>
+              </div>
+              <h2 class="fs32 fw5 mt48">Create Your Account.</h2>
+              <h3 class="fs16 fw5 fc7 mt8">sandeep@freezecrowd.com</h3>
+              <div class="input-box v-center">
+                <input
+                  type="type"
+                  name="studentName"
+                  id="studentName"
+                  required
+                />
+                <label for="studentName">Full Name</label>
+              </div>
+              <div class="input-box v-center">
+                <input type="type" name="usedName" id="usedName" required />
+                <label for="usedName">User Name</label>
+                <span class="input-suggest">You can change anytime</span>
+              </div>
+              <div class="input-box v-center">
+                <input type="type" name="userPhone" id="userPhone" required />
+                <label for="userPhone">Phone</label>
+              </div>
+              <div class="input-heading mt48">Date of birth</div>
+              <div class="input-box v-center">
+                <input type="type" name="userDOB" id="userDOB" required />
+                <label for="userDOB">DD/MM/YYYY</label>
+              </div>
+              <div
+                class="register-next-btn box-center plr32 w100 h48 brd2 bg5 br24 fc3 fw6 mt48"
+                onclick="closeform()"
+              >
+                Next
+              </div>
+            </form>
+            <form
+              action="post"
+              class="school-registeration onboard-form dn"
+            ></form>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer pf w100 b0">
+      <div class="wrapper">
+        <div class="copyright ptb16 fs12 box-center">
+          Copyright © 2017 <strong>FreezeCrowd</strong>. All Rights Reserved.
+          <a href="#" class="fc7 ml24">Privacy Policy </a>
+          <a href="#" class="fc7 ml24">Terms of Service</a>
+          <a href="#" class="fc7 ml24">Contest Rules </a>
+          <a href="#requestActLink" class="fc7 ml24" data-toggle="modal">
+            Request an activation link
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script-v01.js"></script>
+  </body>
+</html>

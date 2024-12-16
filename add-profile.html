@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FreezeCrowd</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="style-v01.css" />
+  </head>
+  <body>
+    <div class="body-bg"></div>
+    <header class="header pr zi99">
+      <div class="wrapper v-center jcsb">
+        <div class="logo-search-box v-center">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/freezecrowd-logo-dark.png"
+                alt="FreezeCrowd Logo" />
+            </a>
+          </div>
+          <form action="post" class="top-search v-center pr ml24">
+            <span class="material-symbols-outlined pa ml16 fc2 fs24">
+              search
+            </span>
+            <input
+              type="text"
+              placeholder="Search"
+              class="h40 br24 bg3 plr48 brd2 fs14" />
+          </form>
+        </div>
+        <nav class="navbar pr">
+          <ul class="nav-items v-center">
+            <li class="nav-item pr aft active">
+              <a href="#" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  home
+                </span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="my-photos.html"
+                class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  photo_camera
+                </span>
+                Photo
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a href="friends.html" class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="material-symbols-outlined nav-icon lh24 mb4">
+                  diversity_3
+                </span>
+                Friends
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="messages.html"
+                class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    Chat
+                  </span>
+                  <span class="item-count box-center blue">27</span>
+                </span>
+                Messages
+              </a>
+            </li>
+            <li class="nav-item pr aft">
+              <a
+                href="notifications.html"
+                class="nav-link v-center fdc fs12 fc2 pb4">
+                <span class="icon-wid-count pr">
+                  <span class="material-symbols-outlined nav-icon lh24 mb4">
+                    notifications
+                  </span>
+                  <span class="item-count box-center red">8</span>
+                </span>
+                Notification
+              </a>
+              <ul class="notify-dd-list bg3 brd2 p16 pa dn">
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class>
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg2 fc3 fs14 box-center">
+                    RV
+                  </span>
+                  <span class>
+                    <b>Rishav Varti</b> shared new photo.
+                    <a href="#" class="fs12 fc2 fc8">see photo</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+
+                <li class="notify-item cp fs14 w100 v-center fc2">
+                  <span class="w-m32 h32 mr8 br50 brd1 bg1 fc3 fs14 box-center">
+                    AK
+                  </span>
+                  <span class>
+                    <b>Ravish Kumar</b> and 1 <b>other person</b> viewed your
+                    profile.
+                    <a href="#" class="fs12 fc2 fc8">see all views</a>
+                  </span>
+                </li>
+                <li class="article-devide"></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-settings pr">
+          <ul class="user-items v-center" onclick="userSettings()">
+            <li class="seprate-nav"></li>
+            <li class="nav-user v-center fc2 ml16 cp">
+              <div class="avatar box-center">
+                <img src="images/avatar-default.jpg" alt="Sandeep Pics" />
+              </div>
+              <div class="user-name fs14 fw5 ml8">Sandeep</div>
+              <span class="material-symbols-outlined fs18 ml4">
+                expand_more
+              </span>
+            </li>
+          </ul>
+          <div
+            id="userSettings"
+            class="userSettings pa t0 r0 p16 bg3 brd2 br2 dn">
+            <div class="user-info w100 h-center ais fww">
+              <div class="user-bg-box flx100"></div>
+              <div class="user-pics pr zi1">
+                <img src="images/avatar-default.jpg" alt="user pics" />
+              </div>
+              <div class="user-detail pr zi1 flx1 ml12">
+                <h2 class="user-name fs15 fw5 mt8">Sandeep Beniwal</h2>
+                <p class="user-name fs12 fc8 mt4">sandeep@freezecrowd.in</p>
+              </div>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> person
+                </span>Personal Information
+              </p>
+              <div class="article-devide"></div>
+              <a href="user-settings.html" class="fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> tune </span>User
+                Settings
+              </a>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8">
+                  notifications </span>Notification Setting
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2">
+                <span class="material-symbols-outlined mr8"> report
+                </span>Report
+              </p>
+              <div class="article-devide"></div>
+              <p class="cp fs15 w100 v-center fc2 pb24">
+                <span class="material-symbols-outlined mr8"> logout </span>Log
+                Out
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-board wrapper df ais mt24 fww">
+        <section class="user-info-block edit-profile bg3 block-design">
+          <article class="user-info w100 plr16 h-center ais fww">
+            <div class="user-bg-box flx100 mt16 pr">
+              <div class="edit-btn-bg pa t0 r0 mt16 mr16 w24 h24">
+                <span class="material-symbols-outlined"> edit </span>
+              </div>
+            </div>
+            <div class="user-pics pr zi1">
+              <div class="pics-up-btn pa t0 r0 mr16 fc2">
+                <span class="material-symbols-outlined"> add_a_photo </span>
+              </div>
+              <img src="images/avatar-default.jpg" alt="user pics" />
+            </div>
+            <div class="user-detail pr zi1 flx1 ml12">
+              <h2 class="user-name fs16 fw5 mt8">Sandeep Beniwal</h2>
+              <p class="user-name fs14 fc8 mt8">sandeep@freezecrowd.in</p>
+              <div class="user-follow-info flx40 mt8 df jcsb plr8">
+                <div class="follower tac">
+                  <p class="follow-count fs16 fw6">15K</p>
+                  <p class="follow-title fs10 fc8 mt4">Followers</p>
+                </div>
+                <div class="following tac">
+                  <p class="follow-count fs16 fw6">990</p>
+                  <p class="follow-title fs10 fc8 mt4">Following</p>
+                </div>
+                <div class="requeting tac">
+                  <p class="follow-count fs16 fw6">24</p>
+                  <p class="follow-title fs10 fc8 mt4">Requests</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="article-devide"></div>
+            <ul
+              id="profile-edit-nav"
+              class="profile-edit-nav pb48 fs13 ttu fc8 v-center">
+              <li
+                data-tab="edit-nav-01"
+                class="edit-nav-item v-center mlr24 cp active">
+                <span class="material-symbols-outlined mr4"> interests </span>
+                My Interest
+              </li>
+              <li
+                data-tab="edit-nav-02"
+                class="edit-nav-item v-center mlr24 cp">
+                <span class="material-symbols-outlined mr4">
+                  settings_account_box
+                </span>
+                Personal Info
+              </li>
+              <li
+                data-tab="edit-nav-03"
+                class="edit-nav-item v-center mlr24 cp">
+                <span class="material-symbols-outlined mr4"> analytics </span>
+                Work Info
+              </li>
+              <li
+                data-tab="edit-nav-04"
+                class="edit-nav-item v-center mlr24 cp">
+                <span class="material-symbols-outlined mr4">
+                  settings_applications
+                </span>
+                About Me
+              </li>
+            </ul>
+          </article>
+          <div class="info-tabs-grp ofh df">
+            <article
+              id="edit-nav-01"
+              class="info-tabs active-cat my-interest w100 plr16 h-center ais fww brd-t1 bg7">
+              <div class="interests-block df w100">
+                <ul id="interest-cat" class="interest-cat bg4">
+                  <li data-tab="int-cat01" class="v-center ofh active">
+                    <img
+                      src="images/interests/books.jpg"
+                      alt="books"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Books</h3>
+                  </li>
+                  <li data-tab="int-cat02" class="v-center ofh">
+                    <img
+                      src="images/interests/movies.jpg"
+                      alt="Movies"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Movies</h3>
+                  </li>
+                  <li data-tab="int-cat03" class="v-center ofh">
+                    <img
+                      src="images/interests/music-band.jpg"
+                      alt="Music Band, Musician, or Genre"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">
+                      Music Band, Musician, or Genre
+                    </h3>
+                  </li>
+                  <li data-tab="int-cat04" class="v-center ofh">
+                    <img
+                      src="images/interests/tv-shows.jpg"
+                      alt="Television Shows"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Television Shows</h3>
+                  </li>
+
+                  <li data-tab="int-cat05" class="v-center ofh">
+                    <img
+                      src="images/interests/actor-actoress.jpg"
+                      alt="Actors and Actresses "
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Actors and Actresses</h3>
+                  </li>
+                  <li data-tab="int-cat06" class="v-center ofh">
+                    <img
+                      src="images/interests/food-drink.jpg"
+                      alt="Foods and Drink"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Foods and Drink</h3>
+                  </li>
+                  <li data-tab="int-cat07" class="v-center ofh">
+                    <img
+                      src="images/interests/restaurants-cafes.jpg"
+                      alt="Restaurants and Cafes"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Restaurants and Cafes</h3>
+                  </li>
+                  <li data-tab="int-cat08" class="v-center ofh">
+                    <img
+                      src="images/interests/sport-team.jpg"
+                      alt="College or Pro Sports Teams"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">
+                      College or Pro Sports Teams
+                    </h3>
+                  </li>
+                  <li data-tab="int-cat09" class="v-center ofh">
+                    <img
+                      src="images/interests/music-band.jpg"
+                      alt="Music Band, Musician, or Genre"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">
+                      Music Band, Musician, or Genre
+                    </h3>
+                  </li>
+                  <li data-tab="int-cat10" class="v-center ofh">
+                    <img
+                      src="images/interests/tv-shows.jpg"
+                      alt="Television Shows"
+                      class="w100" />
+                    <h3 class="fs14 fw5 plr8 fc2">Television Shows</h3>
+                  </li>
+                </ul>
+                <div class="interests-cat-lists flx1">
+                  <div class="heading-cat v-center jcsb brd-b1 mb8">
+                    <form class="search-interest-form w100 plr16">
+                      <div class="search-box v-center pr mtb8">
+                        <span
+                          class="material-symbols-outlined pa l0 fc2 zi1 ml16">
+                          search
+                        </span>
+                        <input
+                          id="search-interest"
+                          type="text"
+                          class="search-interest h48 flx100 pl48 brd2 br24"
+                          placeholder="search & add for your faviorate books" />
+                      </div>
+                      <div class="count-search fs11 fc2 pb8 pr24 tar">
+                        267430 books found
+                      </div>
+                    </form>
+                  </div>
+                  <div class="filter-search v-center jcsb w100 mb24">
+                    <div class="by-name ml24 fs14 fc7 ptb8 plr24 brd2 br8">
+                      6 Books Selected
+                    </div>
+                    <div class="by-sort">
+                      <span class="sort-label fs10 fc2">Sort</span>
+                      <div class="sort-select v-center fs14">
+                        By Date
+                        <span class="material-symbols-outlined ml4 fc2">
+                          arrow_drop_down
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul
+                    id="int-cat01"
+                    class="interest-list plr16 jcse fww active-cat">
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book1.jpg"
+                        alt="books"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Hadover Book
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book2.jpg"
+                        alt="Movies"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Softcore Paperback
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book3.jpg"
+                        alt="Music Band, Musician, or Genre"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Music Band, Musician, or Genre
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book4.jpg"
+                        alt="Television Shows"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Life of the Candle
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book5.jpg"
+                        alt="Actors and Actresses "
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Actors and Actresses
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/books/book2.jpg"
+                        alt="Foods and Drink"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Foods and Drink
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul id="int-cat02" class="interest-list plr16 jcse fww">
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/movies.jpg"
+                        alt="Movies"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Movies
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul id="int-cat03" class="interest-list plr16 jcse fww">
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/music-band.jpg"
+                        alt="Music Band, Musician, or Genre"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Music Band, Musician, or Genre
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul id="int-cat04" class="interest-list plr16 jcse fww">
+                    <li class="flx31 v-center fdc brd2 br8 ofh mb24">
+                      <img
+                        src="images/interests/tv-shows.jpg"
+                        alt="Television Shows"
+                        class="w100" />
+                      <h3 class="fs16 lh24 fw5 fc2 mt16 mb8 tac plr8">
+                        Television Shows
+                      </h3>
+                      <div class="inerest-deselect pa w100 t0 b0 zi2">
+                        <span
+                          class="deselect-btn mt8 ml8 fc3 fs12 dif aic bg5 pt4 pb4 plr8 br2 cp"><span
+                            class="material-symbols-outlined fs16 mr8">
+                            delete_forever
+                          </span>
+                          Remove
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul id="int-cat05" class="interest-list plr16 jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                  <ul id="int-cat06" class="interest-list plr16 jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                  <ul id="int-cat07" class="interest-list plr16 jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                  <ul id="int-cat08" class="interest-list plr16 jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                  <ul id="int-cat09" class="interest-list plr16 jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                  <ul id="int-cat10" class="interest-list plr16 df jcse fww">
+                    <li>No Data Selected</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article
+              id="edit-nav-02"
+              class="info-tabs personal-info w100 plr16 h-center ais fww brd-t1 bg7 mb48">
+              <div class="personal-info-block df w100 fww">
+                <h2 class="fs18 fc2 tac mt40 mb16 flx100">
+                  Your personal info in FreezeCrowd
+                </h2>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">Basic Info</h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">name</span>
+                      <span class="info-detail flx1" data-type="text">Sandeep
+                        Beniwal</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Birthday</span>
+                      <span class="info-detail flx1" data-type="date">August 9,
+                        1986</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Gender</span>
+                      <span class="info-detail flx1"
+                        data-type="gender">Male</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24 mt24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">Contact Info</h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">email</span>
+                      <span class="info-detail flx1"
+                        data-type="email">sandeep@freezecrowd.in</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Phone</span>
+                      <span class="info-detail flx1"
+                        data-type="text">7849394582</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24 mt24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">Address</h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Address</span>
+                      <span class="info-detail flx1" data-type="text">F114,
+                        Tower F, Gulshan Ikebana, Sector 143</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">city</span>
+                      <span class="info-detail flx1"
+                        data-type="text">Noida</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">state</span>
+                      <span class="info-detail flx1" data-type="text">Utter
+                        Pradesh</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Country</span>
+                      <span class="info-detail flx1">India</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Pin Code</span>
+                      <span class="info-detail flx1"
+                        data-type="number">201301</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article
+              id="edit-nav-03"
+              class="info-tabs personal-info w100 plr16 h-center ais fww brd-t1 bg7 mb48">
+              <div class="personal-info-block df w100 fww">
+                <h2 class="fs18 fc2 tac mt40 mb16 flx100">
+                  Your Work Info in FreezeCrowd
+                </h2>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">Current</h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">company name</span>
+                      <span class="info-detail flx1" data-type="text">GLobal
+                        Teli Services</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Job Position</span>
+                      <span class="info-detail flx1" data-type="text">Vice
+                        President (Tech)</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Work
+                        Description</span>
+                      <span class="info-detail flx1 lh24"
+                        data-type="textarea">Lead strategic initiatives, drive
+                        growth, and oversee
+                        operations as Vice President, guiding company
+                        success.</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Company
+                        Address</span>
+                      <span class="info-detail flx1 lh24"
+                        data-type="textarea">101-B Pinnacle Corporate Park B
+                        Wing 1 Floor CTS- 4207
+                        Part Bandra E Kolekalyan Nr Trade</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24 mt24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">
+                    March, 2020 - Aug, 2021
+                  </h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">company name</span>
+                      <span class="info-detail flx1" data-type="text">GLobal
+                        Teli Services</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Work
+                        Description</span>
+                      <span class="info-detail flx1 lh24"
+                        data-type="textarea">Lead strategic initiatives, drive
+                        growth, and oversee
+                        operations as Vice President, guiding company
+                        success.</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Company
+                        Address</span>
+                      <span class="info-detail flx1 lh24"
+                        data-type="textarea">101-B Pinnacle Corporate Park B
+                        Wing 1 Floor CTS- 4207
+                        Part Bandra E Kolekalyan Nr Trade</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+            <article
+              id="edit-nav-04"
+              class="info-tabs personal-info w100 plr16 h-center ais fww brd-t1 bg7 mb48">
+              <div class="personal-info-block df w100 fww">
+                <h2 class="fs18 fc2 tac mt40 mb16 flx100">About You</h2>
+                <div class="basic-info flx100 brd2 br8 bg3 ptb24 mb24">
+                  <h3 class="fs16 ttu fc2 mb24 pl24">Your Info</h3>
+                  <ul class="info-list">
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Relationship
+                        Status</span>
+                      <span class="info-detail flx1"
+                        data-type="marital">Married</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Astrological
+                        Sign</span>
+                      <span class="info-detail flx1" data-type="text">Leo</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                    <li class="info-item plr24 ptb16 brd-b1 v-center jcsb">
+                      <span class="info-credit fs12 ttu fc2">Interested
+                        In</span>
+                      <span class="info-detail flx1"
+                        data-type="text">Friends</span>
+                      <button class="info-edit w-m32 h24 cp">
+                        <span class="material-symbols-outlined fc2">
+                          edit
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="user-related-block bg3 block-design ptb16">
+          <article class="recent-info w100 plr16">
+            <div class="title-grp v-center jcsb">
+              <h2 class="article-title fs12 ttu fc8 fw5">Suggetions</h2>
+              <div class="option-icon"></div>
+            </div>
+
+            <div class="sugget-items">
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-04.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">
+                      Suresh bararia
+                    </h3>
+                    <p class="suggest-skill fs10 fc8">
+                      Singing, Cricket, Design
+                    </p>
+                  </div>
+                </div>
+                <div class="suggest-add">
+                  <p class="cp fc7 fs10 ttu fw6">Add</p>
+                </div>
+              </div>
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-02.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Tanvi Saxena</h3>
+                    <p class="suggest-skill fs10 fc8">
+                      Drawing, Tenish, Reading
+                    </p>
+                  </div>
+                </div>
+                <div class="suggest-add">
+                  <p class="cp fc7 fs10 ttu fw6">Add</p>
+                </div>
+              </div>
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-default.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Manoj Singh</h3>
+                    <p class="suggest-skill fs10 fc8">Dance, Tenish, Reading</p>
+                  </div>
+                </div>
+                <div class="suggest-add">
+                  <p class="cp fc7 fs10 ttu fw6">Add</p>
+                </div>
+              </div>
+
+              <div class="sugget-item v-center jcsb mt12">
+                <div class="suggest-detail v-center cp">
+                  <div class="user-pics-sm pr zi1">
+                    <img src="images/avatar-03.jpg" alt="user pics" />
+                  </div>
+                  <div class="suggest-text ml8">
+                    <h3 class="suggest-name fs12 ttu fw5 fc2">Sneha Pandey</h3>
+                    <p class="suggest-skill fs10 fc8">Music, Dance, Singing</p>
+                  </div>
+                </div>
+                <div class="suggest-add">
+                  <p class="cp fc7 fs10 ttu fw6">Add</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+          <article class="photo-info w100 plr16">
+            <div class="title-grp v-center jcsb">
+              <h2 class="article-title fs12 ttu fc8 fw5">Photo</h2>
+              <div class="option-icon"></div>
+            </div>
+            <div class="photo-box df ais fww mt16">
+              <div class="photo">
+                <img src="images/pics01.jpg" alt="pics 01" />
+              </div>
+              <div class="photo">
+                <img src="images/pics02.jpg" alt="pics 02" />
+              </div>
+              <div class="photo">
+                <img src="images/pics03.jpg" alt="pics 03" />
+              </div>
+              <div class="photo">
+                <img src="images/pics04.jpg" alt="pics 04" />
+              </div>
+
+              <div class="photo">
+                <img src="images/pics05.jpg" alt="pics 05" />
+              </div>
+            </div>
+            <div class="article-devide"></div>
+          </article>
+        </section>
+      </div>
+      <div class="profile-popup-upload-model popup-modal"
+        id="profilePopup" style="display: flex;">
+        <div class="profile-popup-section">
+          <div
+            class="photo-modal-close pa t0 l0 mt16 ml16 cp h24 w24 box-center"
+            id="closeModal6" onclick="closePopup()">
+            <span class="material-symbols-outlined fs24 fc2"> close
+            </span>
+          </div>
+          <div class="user-pics l0 r0 ma zi1 mt8">
+            <a href="add-profile.html">
+              <img src="images/avatar-default.jpg" alt="user pics">
+            </a>
+          </div>
+          <div class="profile-popup-containers plr24">
+            <form action class="profile-popup-form">
+              <h2 class="profile-popup-heading fs20 fw6 df jcc pb16">Compleate
+                your
+                Profile</h2>
+              <div class="form-address ptb16 df fdc mb12">
+                <label for class="tal fs14">ADDRESS :</label>
+                <input type="text" placeholder required
+                  class="bg4 plr8 br4 flx1 w100 ptb12 mtb12">
+              </div>
+              <div class="form-buttons df jcc">
+                <button
+                  class="form-submit bg1 h40 plr24 br4 fc4 ls1 fw5 cp mlr8">Submit</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="script-index-v01.js"></script>
+    <script src="script-select-input.js"></script>
+  </body>
+</html>
